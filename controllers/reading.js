@@ -24,10 +24,10 @@ const reading = {
       title: request.body.title,
       artist: request.body.artist,
     };
-    logger.debug(`Updating Song ${songId} from Playlist ${playlistId}`);
-    playlistStore.updateSong(song, newSong);
-    response.redirect("/playlist/" + playlistId);
+    logger.debug(`Updating Reading ${readingId} from Station ${stationId}`);
+    stationStore.updateReading(reading, newReading);
+    response.redirect("/station/" + stationId);
   }
 };
 
-module.exports = song;
+module.exports = reading;
