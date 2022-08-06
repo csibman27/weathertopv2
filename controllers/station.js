@@ -17,8 +17,8 @@ const station = {
 
   deleteStation(request, response) {
     const stationId = request.params.id;
-    const readingId = request.params.songid;
-    logger.debug(`Deleting Song ${songId} from Playlist ${playlistId}`);
+    const readingId = request.params.readingid;
+    logger.debug(`Deleting Reading ${readingId} from Station ${stationId}`);
     stationStore.removeReading(stationId, readingId);
     response.redirect("/station/" + stationId);
   },
