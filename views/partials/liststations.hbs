@@ -1,0 +1,20 @@
+<table class="ui table">
+  <thead>
+    <tr>
+      <th>Station Name</th>
+      <th>Artist</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each station.readings}}
+      <tr>
+        <td>
+          {{title}}
+        </td>
+        <td>
+          {{artist}}
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
