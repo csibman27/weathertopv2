@@ -3,24 +3,12 @@
 const express = require("express");
 const router = express.Router();
 
-const dashboard = require("./controllers/dashboard.js");
-const about = require("./controllers/about.js");
-
-router.get("/", dashboard.index);
-router.get("/dashboard", dashboard.index);
-router.get("/about", about.index);
-
-module.exports = router;
-"use strict";
-
-const express = require("express");
-const router = express.Router();
 const accounts = require('./controllers/accounts.js');
 
 const station = require('./controllers/station.js');
 const dashboard = require("./controllers/dashboard.js");
 const about = require("./controllers/about.js");
-const request = require("./utils/request.js");
+//const request = require("./utils/request.js");
 
 router.get('/', accounts.index);
 router.get('/login', accounts.login);
