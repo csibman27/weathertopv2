@@ -1,0 +1,36 @@
+<form class="ui stacked segment form" action="/station/{{station.id}}/addreading" method="POST">
+  <div class="six fields">
+    <div class="field">
+      <label>Code</label>
+      <select class="ui selection dropdown" type="number" name="code" required>
+  <option value="">Select Code</option>
+  <option value="100">100</option>
+  <option value="200">200</option>
+  <option value="300">300</option>
+  <option value="400">400</option>
+  <option value="500">500</option>
+  <option value="600">600</option>
+  <option value="700">700</option>
+  <option value="800">800</option>
+     </select>
+    
+    </div>
+    <div class="field">
+      <label>Temp</label>
+      <input name="temp" placeholder "Temperature" type="text" required>
+    </div>
+     <div class="field">
+      <label>Wind Speed</label>
+      <input placeholder="Wind Speed" type="text" name="windSpeed" min="1" max="117" required>
+    </div>
+     <div class="field">
+      <label>Wind Direction</label>
+      <input placeholder="Wind Direction" type="number" name="windDirection" required>
+    </div>
+     <div class="field">
+      <label>Pressure</label>
+      <input placeholder="Pressure" type="number" name="pressure" required>
+    </div>
+  </div>
+  <button class="ui blue submit button">Add Report</button>
+</form>  
