@@ -9,32 +9,47 @@ const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
-    const allstations = stationStore.getAllStations(); // changed getAllStations to getUserStations
+    const allstations = stationStore.getAllStations(); 
     const stations = allstations.sort();
-    
+
+    for (let i = 0; i < stations.length; i++) {
+      let station = stations[i];
+      if (station.readings.length > 0) {
+        updateReadings.getUpdateReading(station);
+      }
+    }
+
     const viewData = {
       title: "Station Dashboard",
       stations: stationStore.getUserStations(loggedInUser.id),
+   
+  
     };
-      
+    logger.info("about to render", stationStore.getUserStations());
 
-  deletePlaylist(request, response) {
-    const playlistId = request.params.id;
-    logger.debug(`Deleting Playlist ${playlistId}`);
-    playlistStore.removePlaylist(playlistId);
+    response.render("dashboard", viewData);
+  },
+
+  deleteStation(request, response) {
+    const stationId = request.params.id;
+    logger.debug(`Deleting Station ${stationId}`);
+    stationStore.removeStation(stationId);
     response.redirect("/dashboard");
   },
 
-  addPlaylist(request, response) {
+  addStation(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);
-    const newPlayList = {
+    const newStation = {
       id: uuid.v1(),
       userid: loggedInUser.id,
-      title: request.body.title,
-      songs: []
+      stationName: request.body.stationName,
+      latitude: request.body.latitude,
+      longitude: request.body.longitude,
+
+      readings: []
     };
-    logger.debug("Creating a new Playlist", newPlayList);
-    playlistStore.addPlaylist(newPlayList);
+    logger.debug("Creating a new Station", newStation);
+    stationStore.addStation(newStation);
     response.redirect("/dashboard");
   }
 };
