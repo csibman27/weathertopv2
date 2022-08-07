@@ -5,12 +5,20 @@
     <title> {{title}} </title>
     <meta charset="UTF-8">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
+    <script src="/views/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="/views/style.css" />
   </head>
+<p style="background-color:SlateBlue;">
+<marquee behavior="scroll" direction="left"><font size="+1">Current weather in Ireland: {{irishweather}}
+  Current time in Ireland: {{date}}
+  </marquee>
+  </p>
   <body>
     <section class="ui container">
       {{{body}}}
     </section>
+
   </body>
 </html>

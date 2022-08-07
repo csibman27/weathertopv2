@@ -2,23 +2,23 @@
   <div class="six fields">
     <div class="field">
       <label>Code</label>
-      <input name="code" placeholder "code" type="text" required>
+      <input name="code" placeholder "0" type="number" required>
     </div>
     <div class="field">
-      <label>Temp</label>
-      <input name="temp" placeholder "temperature" type="text" required>
+      <label>Temperature</label>
+      <input name="temperature" placeholder "0.0" type="number" required>
     </div>
      <div class="field">
       <label>Wind Speed</label>
-      <input placeholder="Wind Speed" type="text" name="windSpeed" min="1" max="117" required>
+      <input placeholder="0.0" type="number" name="windSpeed" min="1" max="100" required>
     </div>
      <div class="field">
       <label>Wind Direction</label>
-      <input placeholder="Wind Direction" type="number" name="windDirection" required>
+      <input placeholder="0.00" type="number" step="0.1" name="windDirection" required>
     </div>
      <div class="field">
       <label>Pressure</label>
-      <input placeholder="Pressure" type="number" name="pressure" required>
+      <input placeholder="0" type="number" name="pressure" required>
     </div>
   </div>
   <button class="ui blue submit button">Add Report</button>
