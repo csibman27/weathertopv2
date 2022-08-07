@@ -7,6 +7,14 @@
       "latitude": "1",
       "longitude": "2",
       "readings": []
+    },
+    {
+      "id": "e427a420-163e-11ed-8b94-99f4f5285bf9",
+      "userid": "bad1d2d0-163e-11ed-8b94-99f4f5285bf9",
+      "stationName": "Waterford",
+      "latitude": "1",
+      "longitude": "2",
+      "readings": []
     }
   ]
 }
