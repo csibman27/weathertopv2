@@ -23,7 +23,13 @@ const station = {
       latitude: station.latitude,
       longitude: station.longitude,
       minTemp: minMax.getMinTemp(station),
-      maxTemp: minMax.getMaxTemp(station)
+      maxTemp: minMax.getMaxTemp(station),
+      minTemp: minMax.getMinTemp(station),
+      maxTemp: minMax.getMaxTemp(station),
+      minWind: minMax.getMinWind(station),
+      maxWind: minMax.getMaxWind(station),
+      minPressure: minMax.getMinPressure(station),
+      maxPressure: minMax.getMaxPressure(station)
       
       
     };
