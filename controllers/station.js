@@ -9,8 +9,7 @@ const currentDayOfMonth = currentDate.getDate();
 const currentMonth = currentDate.getMonth(); // Be careful! January is 0, not 1
 const currentYear = currentDate.getFullYear();
 
-const dateString = currentDayOfMonth + "-" + (currentMonth + 1) + "-" + currentYear;
-// "27-11-2020"
+const dateString = currentYear + "-" + (currentMonth + 1) + "-" + currentDayOfMonth + "-" + "Time:" + "-" + 
 
 const station = {
   index(request, response) {
@@ -42,7 +41,7 @@ const station = {
       temp: request.body.temp,
       windSpeed: request.body.windSpeed,
       pressure: request.body.pressure,
-      timestamp: currentDate,
+      timestamp: dateString,
       
       
       
