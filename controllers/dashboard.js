@@ -12,13 +12,8 @@ const dashboard = {
     const allstations = stationStore.getAllStations(); 
     const stations = allstations.sort();
 
-    for (let i = 0; i < stations.length; i++) {
-      let station = stations[i];
-      if (station.readings.length > 0) {
-        updateReadings.getUpdateReading(station);
-      }
-    }
-
+    
+    
     const viewData = {
       title: "Station Dashboard",
       stations: stationStore.getUserStations(loggedInUser.id),
@@ -26,7 +21,6 @@ const dashboard = {
   
     };
     logger.info("about to render", stationStore.getUserStations());
-
     response.render("dashboard", viewData);
   },
 
@@ -45,7 +39,6 @@ const dashboard = {
       stationName: request.body.stationName,
       latitude: request.body.latitude,
       longitude: request.body.longitude,
-
       readings: []
     };
     logger.debug("Creating a new Station", newStation);
