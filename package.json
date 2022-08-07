@@ -1,5 +1,5 @@
 {
-  "name": "glitch-template",
+  "name": "glitch-project-tmolnar",
   "version": "0.0.1",
   "description": "Starter project for learning glitch and express",
   "main": "server.js",
@@ -20,7 +20,7 @@
     "axios": "^0.21.1"
   },
   "repository": {
-    "url": ""
+    "url": "https://github.com/csibman27/weathertopv2.git"
   },
   "license": "MIT",
   "keywords": [
