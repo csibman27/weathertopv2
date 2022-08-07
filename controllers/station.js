@@ -15,7 +15,7 @@ const station = {
     response.render("station", viewData);
   },
 
-  deleteStation(request, response) {
+  deleteReading(request, response) {
     const stationId = request.params.id;
     const readingId = request.params.readingid;
     logger.debug(`Deleting Reading ${readingId} from Station ${stationId}`);
