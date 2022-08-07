@@ -19,7 +19,9 @@ const station = {
     logger.debug("Station id = ", stationId);
     const viewData = {
       title: "Station",
-      station: stationStore.getStation(stationId)
+      station: stationStore.getStation(stationId),
+      latestReadingTemp: analytics.getLatestReadingTemp(station),
+      latestReadingPressure: analytics.getLatestReadingPressure(station)
       
       
     };
