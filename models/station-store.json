@@ -14,50 +14,7 @@
       "stationName": "Waterford",
       "latitude": "11",
       "longitude": "12",
-      "readings": [
-        {
-          "id": "7e397e10-1682-11ed-876d-c54634932d67",
-          "code": "1",
-          "windSpeed": "1",
-          "pressure": "1",
-          "timestamp": "2022-8-7 T 18:54:53"
-        },
-        {
-          "id": "52029060-1683-11ed-b867-e57ffdeabd61",
-          "code": "1",
-          "windSpeed": "1",
-          "pressure": "1",
-          "timestamp": "2022-8-7 T"
-        },
-        {
-          "id": "723869e0-1683-11ed-978c-b1bc2edccf5c",
-          "code": "1",
-          "windSpeed": "1",
-          "pressure": "1",
-          "timestamp": "2022-8-7 T 20:2:0"
-        },
-        {
-          "id": "7d152ce0-1683-11ed-978c-b1bc2edccf5c",
-          "code": "1",
-          "windSpeed": "1",
-          "pressure": "1",
-          "timestamp": "2022-8-7 T 20:2:0"
-        },
-        {
-          "id": "91ddea40-1683-11ed-9eb8-6be2a8d7073d",
-          "code": "1",
-          "windSpeed": "1",
-          "pressure": "1",
-          "timestamp": "2022-8-7 T 20:3:2"
-        },
-        {
-          "id": "96f440b0-1683-11ed-9eb8-6be2a8d7073d",
-          "code": "1",
-          "windSpeed": "1",
-          "pressure": "1",
-          "timestamp": "2022-8-7 T 20:3:2"
-        }
-      ]
+      "readings": []
     }
   ]
 }
