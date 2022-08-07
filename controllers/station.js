@@ -9,7 +9,8 @@ const currentDayOfMonth = currentDate.getDate();
 const currentMonth = currentDate.getMonth(); // Be careful! January is 0, not 1
 const currentYear = currentDate.getFullYear();
 
-const dateString = currentYear + "-" + (currentMonth + 1) + "-" + currentDayOfMonth + "-" + "Time:" + "-" + 
+
+const dateString = currentYear + "-" + (currentMonth + 1) + "-" + currentDayOfMonth + " " + "T" + ;
 
 const station = {
   index(request, response) {
