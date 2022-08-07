@@ -17,6 +17,11 @@ p {
   color: #333333;
 }
 
+.center {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
 .header {
   position:relative;
   text-align:center;
