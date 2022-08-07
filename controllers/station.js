@@ -20,8 +20,10 @@ const station = {
     const viewData = {
       title: "Station",
       station: stationStore.getStation(stationId),
-      latestReadingTemp: analytics.getLatestReadingTemp(station),
-      latestReadingPressure: analytics.getLatestReadingPressure(station)
+      latitude: station.latitude,
+      longitude: station.longitude,
+      minTemp: minMax.getMinTemp(station),
+      maxTemp: minMax.getMaxTemp(station)
       
       
     };
