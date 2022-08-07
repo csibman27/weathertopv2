@@ -1,11 +1,11 @@
 {
   "stationCollection": [
     {
-      "id": "321e1cc0-1637-11ed-ac6f-8bc74c0f7441",
+      "id": "ab810950-163d-11ed-9526-55ca7312041c",
       "userid": "860b3d10-1176-11ed-9748-0512adec0871",
-      "stationName": "1",
-      "latitude": "0.1",
-      "longitude": "02",
+      "stationName": "Waterford",
+      "latitude": "1",
+      "longitude": "2",
       "readings": []
     }
   ]
