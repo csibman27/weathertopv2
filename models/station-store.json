@@ -16,13 +16,6 @@
       "longitude": "12",
       "readings": [
         {
-          "id": "251532b0-167e-11ed-9094-4f0e1fe0e4d9",
-          "code": "100",
-          "windSpeed": "1",
-          "pressure": "1",
-          "timestamp": "Sun Aug 07 2022 18:24:16 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
           "id": "344c9d40-167e-11ed-9094-4f0e1fe0e4d9",
           "code": "23",
           "windSpeed": "22",
@@ -35,6 +28,47 @@
           "windSpeed": "1",
           "pressure": "1",
           "timestamp": "Sun Aug 07 2022 18:24:51 GMT+0000 (Coordinated Universal Time)"
+        },
+        {
+          "id": "92b7e8d0-167e-11ed-a80e-0b83ec095b4a",
+          "code": "1",
+          "windSpeed": "1",
+          "pressure": "1"
+        },
+        {
+          "id": "9fa4c720-167e-11ed-8ba3-19dbbc05c180",
+          "code": "1",
+          "windSpeed": "1",
+          "pressure": "1",
+          "timestamp": 1659896861842
+        },
+        {
+          "id": "d21e60d0-167e-11ed-8045-99e521a5d060",
+          "code": "1",
+          "windSpeed": "1",
+          "pressure": "1",
+          "timestamp": 1659896946
+        },
+        {
+          "id": "0f9cdef0-167f-11ed-97c9-8ded8973972c",
+          "code": "1",
+          "windSpeed": "1",
+          "pressure": "1",
+          "timestamp": 1659897049
+        },
+        {
+          "id": "58f6cb60-167f-11ed-acb4-f1d4a709f0d8",
+          "code": "1",
+          "windSpeed": "1",
+          "pressure": "1",
+          "timestamp": 1659897170063
+        },
+        {
+          "id": "7c9c9e50-167f-11ed-a2a8-e1571849473e",
+          "code": "1",
+          "windSpeed": "1",
+          "pressure": "1",
+          "timestamp": "Sun Aug 07 2022 18:33:50 GMT+0000 (Coordinated Universal Time)"
         }
       ]
     }
