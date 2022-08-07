@@ -28,8 +28,11 @@ const station = {
     const station = stationStore.getStation(stationId);
     const newReading = {
       id: uuid.v1(),
-      title: request.body.title,
-      artist: request.body.artist
+      code: request.body.code,
+      temp: request.body.temp,
+      windSpeed: request.body.windSpeed,
+      pressure: request.body.pressure,
+      timestamp: Date()
     };
     logger.debug("New Reading = ", newReading);
     stationStore.addReading(stationId, newReading);
