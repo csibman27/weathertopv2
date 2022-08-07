@@ -15,6 +15,14 @@
       "latitude": "1",
       "longitude": "2",
       "readings": []
+    },
+    {
+      "id": "f9f2dc90-166e-11ed-9060-35193020af14",
+      "userid": "bad1d2d0-163e-11ed-8b94-99f4f5285bf9",
+      "stationName": "Dunmore",
+      "latitude": "22",
+      "longitude": "22",
+      "readings": []
     }
   ]
 }
