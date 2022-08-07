@@ -11,6 +11,8 @@ const station = {
     const viewData = {
       title: "Station",
       station: stationStore.getStation(stationId)
+      
+      
     };
     response.render("station", viewData);
   },
@@ -33,8 +35,11 @@ const station = {
       windSpeed: request.body.windSpeed,
       pressure: request.body.pressure,
       timestamp: Date()
+      
+      
     };
     logger.debug("New Reading = ", newReading);
+    
     stationStore.addReading(stationId, newReading);
     response.redirect("/station/" + stationId);
   }

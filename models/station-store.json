@@ -9,12 +9,34 @@
       "readings": []
     },
     {
-      "id": "20a4ef00-1678-11ed-9060-35193020af14",
+      "id": "c2558120-167d-11ed-9094-4f0e1fe0e4d9",
       "userid": "bad1d2d0-163e-11ed-8b94-99f4f5285bf9",
       "stationName": "Waterford",
-      "latitude": "1",
-      "longitude": "2",
-      "readings": []
+      "latitude": "11",
+      "longitude": "12",
+      "readings": [
+        {
+          "id": "251532b0-167e-11ed-9094-4f0e1fe0e4d9",
+          "code": "100",
+          "windSpeed": "1",
+          "pressure": "1",
+          "timestamp": "Sun Aug 07 2022 18:24:16 GMT+0000 (Coordinated Universal Time)"
+        },
+        {
+          "id": "344c9d40-167e-11ed-9094-4f0e1fe0e4d9",
+          "code": "23",
+          "windSpeed": "22",
+          "pressure": "22",
+          "timestamp": "Sun Aug 07 2022 18:24:41 GMT+0000 (Coordinated Universal Time)"
+        },
+        {
+          "id": "3a408270-167e-11ed-9094-4f0e1fe0e4d9",
+          "code": "1",
+          "windSpeed": "1",
+          "pressure": "1",
+          "timestamp": "Sun Aug 07 2022 18:24:51 GMT+0000 (Coordinated Universal Time)"
+        }
+      ]
     }
   ]
 }
