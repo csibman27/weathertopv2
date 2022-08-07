@@ -9,11 +9,6 @@ const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
-    const allstations = stationStore.getAllStations(); 
-    const stations = allstations.sort();
-
-    
-    
     const viewData = {
       title: "Station Dashboard",
       stations: stationStore.getUserStations(loggedInUser.id),

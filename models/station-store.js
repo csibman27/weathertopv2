@@ -39,12 +39,6 @@ const stationStore = {
     this.store.save();
   },
 
-  addAutoReading(id, reading) {
-    const station = this.getStation(id);
-    station.readings.push(reading);
-    this.store.save();
-  },
-
   removeReading(id, readingId) {
     const station = this.getStation(id);
     const readings = station.readings;
@@ -53,10 +47,7 @@ const stationStore = {
   },
 
   getUserStations(userid) {
-    let stations = this.store.findBy(this.collection, { userid: userid });
-    const orderedStations = _.sortBy(stations, o => o.stationName);
-    return orderedStations;
-    //return this.store.findBy(this.collection, { userid: userid });
+    return this.store.findBy(this.collection, { userid: userid });
   }
 };
 
