@@ -17,17 +17,22 @@ router.get('/logout', accounts.logout);
 router.post('/register', accounts.register);
 router.post('/authenticate', accounts.authenticate);
 
-//station
+//dash station
 router.get('/station/:id', station.index);
-router.post("/dashboard/addstation", dashboard.addStation);
+router.post('/dashboard/addstation', dashboard.addStation);
+router.get('/dashboard/deletestation/:id', dashboard.deleteStation);
 
-
-//reading
+//dash reading
 router.post('/station/:id/addreading', station.addReading);
+router.get('/station/:id/deletereading/:readingid', station.deleteReading);
+
+//edit reading
+//router.get('/reading/:id/editreading/:readingid', reading.index);
+//router.post('/reading/:id/updatereading/:readingid', reading.update);
 
 //menu
-router.get("/dashboard", dashboard.index);
-router.get("/about", about.index);
+router.get('/dashboard', dashboard.index);
+router.get('/about', about.index);
 
 
 
