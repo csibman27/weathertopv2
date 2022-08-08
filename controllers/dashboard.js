@@ -1,14 +1,10 @@
+"use strict";
+
 var _ = require("lodash");
-
-("use strict");
-
-
 const accounts = require("./accounts.js");
 const logger = require("../utils/logger");
 const stationStore = require("../models/station-store");
 const uuid = require("uuid");
-//const data = require("../utils/data");
-const updateReadings = require("../utils/updateReadings");
 
 const dashboard = {
   index(request, response) {
@@ -18,11 +14,11 @@ const dashboard = {
     const stations = allstations.sort();
     
    // for (let i = 0; i < stations.length; i++) {
-  //    let station = stations[i];
-    //  if (station.readings.length > 0) {
-      //  updateReadings.getUpdateReading(station);
-     // }
-   // }
+    //  let station = stations[i];
+     // if (station.readings.length > 0) {
+       // updateReadings.getUpdateReading(station);
+      //}
+    //}
     
     const viewData = {
       title: "Station Dashboard",
