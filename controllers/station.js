@@ -24,12 +24,12 @@ const station = {
       name: station.name,
       station: stationStore.getStation(stationId),
       latitude: station.latitude,
-      longitude: stationAnalytics.getLatestReadingTemp(station),
+      longitude: station.longitude,
       windSpeed: request.body.windSpeed,
       weather: stationAnalytics.getLatestWeatherCode(station),
-      tempInCelsius: stationAnalytics.getLatestReadingTemp(station),
+      tempInCelsius: station.readings.temp,
       tempInFahrenheit: stationAnalytics.getTempsInFahrenheit(station),
-      pressure: stationAnalytics.getNumber(station)
+      pressure: stationAnalytics.getLatestReadingPressure(station)
       
       
     };
