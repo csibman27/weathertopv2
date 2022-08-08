@@ -1,6 +1,6 @@
 "use strict";
 
-//const data = require("../utils/data");
+const data = require("../controllers/station");
 
 const stationAnalytics = {
   getLatestReadingTemp(station) {
@@ -67,6 +67,16 @@ const stationAnalytics = {
     }
 
     return textCode;
+  },
+  
+  getNumber(station) {
+    return 12
+  },
+  
+   getTempsInFahrenheit(station) {
+
+    let tempF = (tempC * 9 / 5) + 32;
+    return tempF;
   }
 };
 module.exports = stationAnalytics;
