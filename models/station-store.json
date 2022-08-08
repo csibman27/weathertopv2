@@ -9,41 +9,12 @@
       "readings": []
     },
     {
-      "id": "c2558120-167d-11ed-9094-4f0e1fe0e4d9",
+      "id": "32daee50-174e-11ed-b4cb-d3424747d17f",
       "userid": "bad1d2d0-163e-11ed-8b94-99f4f5285bf9",
       "stationName": "Waterford",
-      "latitude": "11",
-      "longitude": "12",
-      "readings": [
-        {
-          "id": "066d1a80-1741-11ed-9747-9d52a1ae251e",
-          "code": "1",
-          "windSpeed": "12",
-          "pressure": "12",
-          "timestamp": "2022-8-8 T 18:38:21"
-        },
-        {
-          "id": "6680fe40-1747-11ed-b4a8-49c538bd60c6",
-          "code": "11",
-          "windSpeed": "11",
-          "pressure": "11",
-          "timestamp": "2022-8-8 T 19:24:31"
-        },
-        {
-          "id": "96efde60-1748-11ed-8433-33ecba8b1790",
-          "code": "12",
-          "windSpeed": "12",
-          "pressure": "12",
-          "timestamp": "2022-8-8 T 19:29:45"
-        },
-        {
-          "id": "54281d80-1749-11ed-9cf6-93ed230344a9",
-          "code": "123",
-          "windSpeed": "12",
-          "pressure": "12",
-          "timestamp": "2022-8-8 T 19:38:32"
-        }
-      ]
+      "latitude": "1",
+      "longitude": "2",
+      "readings": []
     }
   ]
 }

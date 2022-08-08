@@ -25,7 +25,8 @@ const station = {
       station: station,
       latitude: station.latitude,
       longitude: station.longitude,
-      windSpeed: stationAnalytics.windSpeed(station)
+      windSpeed: station.windSpeed
+      //windSpeed: stationAnalytics.windSpeed(station)
       
     };
     response.render("station", viewData);
@@ -47,10 +48,9 @@ const station = {
       code: request.body.code,
       temp: request.body.temp,
       windSpeed: request.body.windSpeed,
+      windDirection: request.body.windDirection,
       pressure: request.body.pressure,
       timestamp: dateString,
-      
-      
       
     };
     logger.debug("New Reading = ", newReading);
