@@ -2,7 +2,7 @@
 
 
 
-const conversions = {
+const data = {
   getLatestTempFahr(station) {
     let latestReadingTempFahr = null;
     if (station.readings.length > 0) {
