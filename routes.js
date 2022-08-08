@@ -6,7 +6,7 @@ const router = express.Router();
 const accounts = require('./controllers/accounts.js');
 
 const station = require('./controllers/station.js');
-const dashboard = require("./controllers/dashboard.js");
+const dashboard = require('./controllers/dashboard.js');
 const about = require("./controllers/about.js");
 
 //Account

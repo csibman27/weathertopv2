@@ -8,25 +8,26 @@ const logger = require("../utils/logger");
 const stationStore = require("../models/station-store");
 const uuid = require("uuid");
 const minMax = require("../utils/minMax");
+const updateReadings = require("../utils/updateReadings");
 
 const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
-    
-    const allstations = stationStore.getAllStations(); 
+    const allstations = stationStore.getAllStations();
     const stations = allstations.sort();
-
+    
     for (let i = 0; i < stations.length; i++) {
       let station = stations[i];
       if (station.readings.length > 0) {
         updateReadings.getUpdateReading(station);
       }
     }
+    
     const viewData = {
       title: "Station Dashboard",
       stations: stationStore.getUserStations(loggedInUser.id),
-      
+    };
       
     logger.info("about to render", stationStore.getUserStations());
     response.render("dashboard", viewData);
