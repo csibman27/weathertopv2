@@ -177,6 +177,38 @@ const conversions = {
       return beaufort;
     }
   },
+  
+  //windspeed calculation method (extra)
+   geWindSpeed(station) {
+
+    let bft = "no value"; //basic value is Calm
+    if (windSpeed > 0 && windSpeed <= 1) {
+      bft = 0;
+    } else if (windSpeed > 1 && windSpeed <= 5) {
+      bft = 1;
+    } else if (windSpeed > 6 && windSpeed <= 11) {
+      bft = 2;
+    } else if (windSpeed > 12 && windSpeed <= 19) {
+      bft = 3;
+    } else if (windSpeed > 20 && windSpeed <= 28) {
+      bft = 4;
+    } else if (windSpeed > 29 && windSpeed <= 38) {
+      bft = 5;
+    } else if (windSpeed > 39 && windSpeed <= 49) {
+      bft = 6;
+    } else if (windSpeed > 50 && windSpeed <= 61) {
+      bft = 7;
+    } else if (windSpeed > 62 && windSpeed <= 74) {
+      bft = 8;
+    } else if (windSpeed > 75 && windSpeed <= 88) {
+      bft = 9;
+    } else if (windSpeed > 89 && windSpeed <= 102) {
+      bft = 10;
+    } else if (windSpeed > 103 && windSpeed <= 117) {
+      bft = 11;
+    }
+    return bft;
+  }
 
   getLatestWindDirection(station) {
     let convertToDirection = "invalid Direction";
