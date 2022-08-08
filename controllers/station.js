@@ -23,9 +23,9 @@ const station = {
       name: station.name,
       station: stationStore.getStation(stationId),
       latitude: station.latitude,
-      longitude: station.longitude
-      //windSpeed: station.windSpeed
-      //windSpeed: stationAnalytics.windSpeed(station)
+      longitude: station.longitude,
+      latestReadingTemp: stationAnalytics.getLatestReadingTemp(station),
+      latestReadingPressure: stationAnalytics.getLatestReadingPressure(station)
       
     };
     response.render("station", viewData);
