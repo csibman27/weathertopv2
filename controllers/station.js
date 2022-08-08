@@ -18,13 +18,15 @@ const dateString = currentYear + "-" + (currentMonth + 1) + "-" + currentDayOfMo
 const station = {
   index(request, response) {
     const stationId = request.params.id;
+    const station = stationStore.getStation(stationId);
     logger.debug("Station id = ", stationId);
     const viewData = {
       name: station.name,
       station: stationStore.getStation(stationId),
       latitude: station.latitude,
       longitude: station.longitude,
-      //temp: stationAnalytics.getLatestReadingTemp(station)
+      windSpeed: request.body.windSpeed,
+      weatherCode: stationAnalytics.getLatestWeatherCode(station)
       
       
     };

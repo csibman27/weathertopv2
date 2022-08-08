@@ -16,27 +16,20 @@
       "longitude": "2",
       "readings": [
         {
-          "id": "b510dd70-174f-11ed-9e99-874ccfc7bdce",
-          "code": "1",
-          "windSpeed": "1",
-          "pressure": "1",
-          "timestamp": "2022-8-8 T 20:24:8"
-        },
-        {
-          "id": "bc837360-174f-11ed-aa2c-c9e19cfd8fff",
+          "id": "62baed30-1755-11ed-91e2-6f04c43aad1f",
           "code": "1",
           "windSpeed": "1",
           "windDirection": "1",
           "pressure": "1",
-          "timestamp": "2022-8-8 T 20:24:31"
+          "timestamp": "2022-8-8 T 21:4:11"
         },
         {
-          "id": "b45403d0-1754-11ed-9363-5d6c560aae30",
+          "id": "c1e3c6f0-1756-11ed-897b-e5b5a6eebf95",
           "code": "1",
           "windSpeed": "1",
           "windDirection": "1",
           "pressure": "1",
-          "timestamp": "2022-8-8 T 20:59:45"
+          "timestamp": "2022-8-8 T 21:14:34"
         }
       ]
     }
