@@ -1,14 +1,4 @@
-/**
- * The StationAnalytics utils class contains the latest Reading calculations for this application.
- *
- * @author Sheila Kirwan
- *
- */
-
-const conversions = require("../utils/conversions");
-const minMax = require("../utils/minMax");
-
-("use strict");
+"use strict";
 
 const stationAnalytics = {
   getLatestReadingTemp(station) {

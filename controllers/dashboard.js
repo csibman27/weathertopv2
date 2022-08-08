@@ -1,37 +1,58 @@
-/**
- * The StationAnalytics utils class contains the latest Reading calculations for this application.
- *
- * @author Sheila Kirwan
- *
- */
-
-//const conversions = require("../utils/conversions");
-//const minMax = require("../utils/minMax");
+var _ = require("lodash");
 
 ("use strict");
 
-const stationAnalytics = {
-  getLatestReadingTemp(station) {
-    let latestReadingTemp = null;
 
-    if (station.readings.length > 0) {
-      latestReadingTemp = station.readings[0].temp;
-      for (let i = 1; i < station.readings.length; i++) {
-        latestReadingTemp = station.readings[i].temp;
-      }
-    }
-    return latestReadingTemp;
+const accounts = require("./accounts.js");
+const logger = require("../utils/logger");
+const stationStore = require("../models/station-store");
+const uuid = require("uuid");
+//const data = require("../utils/data");
+
+const dashboard = {
+  index(request, response) {
+    logger.info("dashboard rendering");
+    const loggedInUser = accounts.getCurrentUser(request);
+    const allstations = stationStore.getAllStations();
+    const stations = allstations.sort();
+    
+   // for (let i = 0; i < stations.length; i++) {
+  //    let station = stations[i];
+    //  if (station.readings.length > 0) {
+      //  updateReadings.getUpdateReading(station);
+     // }
+   // }
+    
+    const viewData = {
+      title: "Station Dashboard",
+      stations: stationStore.getUserStations(loggedInUser.id),
+    };
+      
+    logger.info("about to render", stationStore.getUserStations());
+    response.render("dashboard", viewData);
   },
 
-  getLatestReadingPressure(station) {
-    let latestReadingPressure = null;
-    if (station.readings.length > 0) {
-      latestReadingPressure = station.readings[0].pressure;
-      for (let i = 1; i < station.readings.length; i++) {
-        latestReadingPressure = station.readings[i].pressure;
-      }
-    }
-    return latestReadingPressure;
+  deleteStation(request, response) {
+    const stationId = request.params.id;
+    logger.debug(`Deleting Station ${stationId}`);
+    stationStore.removeStation(stationId);
+    response.redirect("/dashboard");
+  },
+
+  addStation(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
+    const newStation = {
+      id: uuid.v1(),
+      userid: loggedInUser.id,
+      stationName: request.body.stationName,
+      latitude: request.body.latitude,
+      longitude: request.body.longitude,
+      readings: []
+    };
+    logger.debug("Creating a new Station", newStation);
+    stationStore.addStation(newStation);
+    response.redirect("/dashboard");
   }
 };
-module.exports = stationAnalytics;
+
+module.exports = dashboard;
