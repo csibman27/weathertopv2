@@ -23,6 +23,14 @@
           "timestamp": "2022-8-8 T 18:38:21"
         }
       ]
+    },
+    {
+      "id": "bfe48ba0-1742-11ed-92ed-7744ed69f5c2",
+      "userid": "bad1d2d0-163e-11ed-8b94-99f4f5285bf9",
+      "stationName": "Dunmore",
+      "latitude": "12",
+      "longitude": "14",
+      "readings": []
     }
   ]
 }

@@ -21,7 +21,9 @@ const station = {
       title: "Station",
       station: stationStore.getStation(stationId),
       latitude: station.latitude,
-      longitude: station.longitude
+      longitude: station.longitude,
+      windSpeed: station.windSpeed,
+      pressure: station.getPressure
      
       
       

@@ -179,7 +179,7 @@ const conversions = {
   },
   
   //windspeed calculation method (extra)
-   geWindSpeed(station) {
+   getWindSpeed(station) {
 
     let bft = "no value"; //basic value is Calm
     if (windSpeed > 0 && windSpeed <= 1) {
