@@ -26,7 +26,8 @@ const station = {
       latitude: station.latitude,
       longitude: station.longitude,
       windSpeed: request.body.windSpeed,
-      weatherCode: stationAnalytics.getLatestWeatherCode(station)
+      weatherCode: stationAnalytics.getLatestWeatherCode(station),
+      latestReadingTemp: stationAnalytics.getLatestReadingTemp(station)
       
       
     };
