@@ -22,11 +22,7 @@ const station = {
       title: "Station",
       station: stationStore.getStation(stationId),
       latitude: station.latitude,
-      longitude: station.longitude,
-      latestWindReading: data.getLatestWindReading(station),
-      pressure: station.getPressure
-     
-      
+      longitude: station.longitude
       
     };
     response.render("station", viewData);
