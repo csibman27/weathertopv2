@@ -4,6 +4,7 @@ const logger = require("../utils/logger");
 const stationStore = require("../models/station-store");
 const uuid = require("uuid");
 const currentDate = new Date();
+const stationAnalytics = require("../utils/station-analytics");
 //const data = require("../utils/data");
 
 const currentDayOfMonth = currentDate.getDate();
@@ -19,10 +20,12 @@ const station = {
     const stationId = request.params.id;
     logger.debug("Station id = ", stationId);
     const viewData = {
-      name: "Station",
-      station: stationStore.getStation(stationId),
+      name: station.name,
+      //station: stationStore.getStation(stationId),
+      station: station,
       latitude: station.latitude,
-      longitude: station.longitude
+      longitude: station.longitude,
+      windSpeed: stationAnalytics.getWindSpeed(station)
       
     };
     response.render("station", viewData);

@@ -11,6 +11,7 @@ app.use(cookieParser());
 const exphbs = require("express-handlebars");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static("public/css"));
+app.use(express.static("public"));
 app.use(fileUpload());
 app.engine(
   ".hbs",
