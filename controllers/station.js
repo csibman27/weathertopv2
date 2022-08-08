@@ -25,7 +25,7 @@ const station = {
       station: station,
       latitude: station.latitude,
       longitude: station.longitude,
-      windSpeed: stationAnalytics.getWindSpeed(station)
+      windSpeed: stationAnalytics.windSpeed(station)
       
     };
     response.render("station", viewData);
