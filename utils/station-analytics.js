@@ -74,7 +74,7 @@ const stationAnalytics = {
   },
   
    getTempsInFahrenheit(station) {
-
+    let tempC = station.readings.temp;
     let tempF = (tempC * 9 / 5) + 32;
     return tempF;
   }

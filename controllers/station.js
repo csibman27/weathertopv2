@@ -28,7 +28,7 @@ const station = {
       windSpeed: request.body.windSpeed,
       weather: stationAnalytics.getLatestWeatherCode(station),
       tempInCelsius: stationAnalytics.getLatestReadingTemp(station),
-      tempInCFahrenheit: 
+      tempInFahrenheit: stationAnalytics.getTempsInFahrenheit(station),
       pressure: stationAnalytics.getNumber(station)
       
       

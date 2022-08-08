@@ -22,6 +22,14 @@
           "windDirection": "2",
           "pressure": "2",
           "timestamp": "2022-8-8 T 21:42:9"
+        },
+        {
+          "id": "36d4b360-175d-11ed-9e41-3d32e738ac99",
+          "code": "100",
+          "windSpeed": "2",
+          "windDirection": "12",
+          "pressure": "1000",
+          "timestamp": "2022-8-8 T 22:0:16"
         }
       ]
     }
