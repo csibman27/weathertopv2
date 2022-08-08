@@ -14,7 +14,23 @@
       "stationName": "Waterford",
       "latitude": "1",
       "longitude": "2",
-      "readings": []
+      "readings": [
+        {
+          "id": "b510dd70-174f-11ed-9e99-874ccfc7bdce",
+          "code": "1",
+          "windSpeed": "1",
+          "pressure": "1",
+          "timestamp": "2022-8-8 T 20:24:8"
+        },
+        {
+          "id": "bc837360-174f-11ed-aa2c-c9e19cfd8fff",
+          "code": "1",
+          "windSpeed": "1",
+          "windDirection": "1",
+          "pressure": "1",
+          "timestamp": "2022-8-8 T 20:24:31"
+        }
+      ]
     }
   ]
 }

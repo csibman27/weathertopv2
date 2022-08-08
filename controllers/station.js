@@ -21,11 +21,10 @@ const station = {
     logger.debug("Station id = ", stationId);
     const viewData = {
       name: station.name,
-      //station: stationStore.getStation(stationId),
-      station: station,
+      station: stationStore.getStation(stationId),
       latitude: station.latitude,
-      longitude: station.longitude,
-      windSpeed: station.windSpeed
+      longitude: station.longitude
+      //windSpeed: station.windSpeed
       //windSpeed: stationAnalytics.windSpeed(station)
       
     };
