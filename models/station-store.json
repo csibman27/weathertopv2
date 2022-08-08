@@ -28,6 +28,20 @@
           "windSpeed": "11",
           "pressure": "11",
           "timestamp": "2022-8-8 T 19:24:31"
+        },
+        {
+          "id": "96efde60-1748-11ed-8433-33ecba8b1790",
+          "code": "12",
+          "windSpeed": "12",
+          "pressure": "12",
+          "timestamp": "2022-8-8 T 19:29:45"
+        },
+        {
+          "id": "54281d80-1749-11ed-9cf6-93ed230344a9",
+          "code": "123",
+          "windSpeed": "12",
+          "pressure": "12",
+          "timestamp": "2022-8-8 T 19:38:32"
         }
       ]
     }

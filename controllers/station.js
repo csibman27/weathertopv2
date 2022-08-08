@@ -19,7 +19,7 @@ const station = {
     const stationId = request.params.id;
     logger.debug("Station id = ", stationId);
     const viewData = {
-      title: "Station",
+      name: "Station",
       station: stationStore.getStation(stationId),
       latitude: station.latitude,
       longitude: station.longitude
