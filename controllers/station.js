@@ -24,7 +24,7 @@ const station = {
       station: stationStore.getStation(stationId),
       latitude: station.latitude,
       longitude: station.longitude,
-      temp: stationAnalytics.getLatestReadingTemp(station)
+      //temp: stationAnalytics.getLatestReadingTemp(station)
       
       
     };
