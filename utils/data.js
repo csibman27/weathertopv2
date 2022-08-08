@@ -1,5 +1,7 @@
 "use strict";
 
+
+
 const conversions = {
   getLatestTempFahr(station) {
     let latestReadingTempFahr = null;
@@ -326,4 +328,4 @@ const conversions = {
     return latestWindChill;
   }
 };
-module.exports = conversions;
+module.exports = data;

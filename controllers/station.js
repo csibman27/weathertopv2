@@ -4,6 +4,7 @@ const logger = require("../utils/logger");
 const stationStore = require("../models/station-store");
 const uuid = require("uuid");
 const currentDate = new Date();
+//const data = require("../utils/data");
 
 const currentDayOfMonth = currentDate.getDate();
 const currentMonth = currentDate.getMonth(); // Be careful! January is 0, not 1
@@ -22,7 +23,7 @@ const station = {
       station: stationStore.getStation(stationId),
       latitude: station.latitude,
       longitude: station.longitude,
-      windSpeed: station.windSpeed,
+      latestWindReading: data.getLatestWindReading(station),
       pressure: station.getPressure
      
       

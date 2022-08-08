@@ -31,6 +31,52 @@
       "latitude": "12",
       "longitude": "14",
       "readings": []
+    },
+    {
+      "id": "215d1730-1743-11ed-b083-29a989cc06a1",
+      "userid": "bad1d2d0-163e-11ed-8b94-99f4f5285bf9",
+      "stationName": "1",
+      "latitude": "11",
+      "longitude": "11",
+      "readings": [
+        {
+          "id": "269e0010-1743-11ed-b083-29a989cc06a1",
+          "code": "12",
+          "windSpeed": "12",
+          "pressure": "12",
+          "timestamp": "2022-8-8 T 18:54:14"
+        },
+        {
+          "id": "627a18d0-1743-11ed-b083-29a989cc06a1",
+          "code": "12",
+          "windSpeed": "12",
+          "pressure": "12",
+          "timestamp": "2022-8-8 T 18:54:14"
+        }
+      ]
+    },
+    {
+      "id": "6dec16f0-1743-11ed-b083-29a989cc06a1",
+      "userid": "bad1d2d0-163e-11ed-8b94-99f4f5285bf9",
+      "stationName": "12",
+      "latitude": "23",
+      "longitude": "42",
+      "readings": [
+        {
+          "id": "74f786a0-1743-11ed-b083-29a989cc06a1",
+          "code": "33",
+          "windSpeed": "12",
+          "pressure": "123",
+          "timestamp": "2022-8-8 T 18:54:14"
+        },
+        {
+          "id": "84e91970-1743-11ed-b083-29a989cc06a1",
+          "code": "11",
+          "windSpeed": "11",
+          "pressure": "11",
+          "timestamp": "2022-8-8 T 18:54:14"
+        }
+      ]
     }
   ]
 }
