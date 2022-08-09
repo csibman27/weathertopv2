@@ -73,10 +73,20 @@ const stationAnalytics = {
     return 12
   },
   
-   getTempsInFahrenheit(station) {
-    let tempC = station.readings.temp;
-    let tempF = (tempC * 9 / 5) + 32;
+  getTempsInCelsius(station) {
+    tempC = station.readings.temp.length() -1;
+    return tempC;
+  },
+  
+  getTempsInFahrenheit(station) {
+    let tempF = null;
+    if (station.readings.length > 0) {
+      tempF = station.readings[0].temp;
+      for (let i = 1; i < station.readings.length; i++) {
+        tempF = (station.readings[i].temp * 9) / 5 + 32;
+      }
+    }
     return tempF;
-  }
+  },
 };
 module.exports = stationAnalytics;
