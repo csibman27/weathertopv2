@@ -38,14 +38,6 @@
           "windDirection": "1",
           "pressure": "1",
           "timestamp": "2022-8-9 T 18:31:3"
-        },
-        {
-          "id": "caa533b0-1809-11ed-af4d-89ddb6575d60",
-          "code": "300",
-          "windSpeed": "1",
-          "windDirection": "1",
-          "pressure": "1",
-          "timestamp": "2022-8-9 T 18:36:4"
         }
       ]
     }

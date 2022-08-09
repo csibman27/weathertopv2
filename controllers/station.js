@@ -29,7 +29,8 @@ const station = {
       weather: stationAnalytics.getWeatherCode(station),
       tempInCelsius: stationAnalytics.getTemp(station),
       tempInFahrenheit: stationAnalytics.getTempsInFahrenheit(station),
-      pressure: stationAnalytics.getPressure(station)
+      pressure: stationAnalytics.getPressure(station),
+      weatherIcon: stationAnalytics.getWeatherIcon(station)
       
       
     };
