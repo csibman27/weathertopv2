@@ -186,35 +186,120 @@ const stationAnalytics = {
     }
   },
   
-   getWindSpeed(station) {
+   getWindDirection(station) {
+    let compass = "invalid Direction";
+    let latestWindDirection = null;
+    if (station.readings.length > 0) {
+      latestWindDirection = station.readings[0];
+      for (let i = 1; i < station.readings.length; i++) {
+        latestWindDirection = station.readings[i];
+      }
 
-    let bft = "no value"; //basic value is Calm
-    if (windSpeed > 0 && windSpeed <= 1) {
-      bft = 0;
-    } else if (windSpeed > 1 && windSpeed <= 5) {
-      bft = 1;
-    } else if (windSpeed > 6 && windSpeed <= 11) {
-      bft = 2;
-    } else if (windSpeed > 12 && windSpeed <= 19) {
-      bft = 3;
-    } else if (windSpeed > 20 && windSpeed <= 28) {
-      bft = 4;
-    } else if (windSpeed > 29 && windSpeed <= 38) {
-      bft = 5;
-    } else if (windSpeed > 39 && windSpeed <= 49) {
-      bft = 6;
-    } else if (windSpeed > 50 && windSpeed <= 61) {
-      bft = 7;
-    } else if (windSpeed > 62 && windSpeed <= 74) {
-      bft = 8;
-    } else if (windSpeed > 75 && windSpeed <= 88) {
-      bft = 9;
-    } else if (windSpeed > 89 && windSpeed <= 102) {
-      bft = 10;
-    } else if (windSpeed > 103 && windSpeed <= 117) {
-      bft = 11;
+      if (
+        (latestWindDirection.windDirection >= 348.75 &&
+          latestWindDirection.windDirection <= 360) ||
+        (latestWindDirection.windDirection >= 0 &&
+          latestWindDirection.windDirection <= 11.25)
+      ) {
+        compass = "North";
+      } else if (
+        latestWindDirection.windDirection >= 11.25 &&
+        latestWindDirection.windDirection <= 33.75
+      ) {
+        compass = "North North East";
+      } else if (
+        latestWindDirection.windDirection >= 33.75 &&
+        latestWindDirection.windDirection <= 56.25
+      ) {
+        compass = "North East";
+      } else if (
+        latestWindDirection.windDirection >= 56.25 &&
+        latestWindDirection.windDirection <= 78.75
+      ) {
+        compass = "East North East";
+      } else if (
+        latestWindDirection.windDirection >= 78.25 &&
+        latestWindDirection.windDirection <= 101.25
+      ) {
+        compass = "East";
+      } else if (
+        latestWindDirection.windDirection >= 101.25 &&
+        latestWindDirection.windDirection <= 123.75
+      ) {
+        compass = "East South East";
+      } else if (
+        latestWindDirection.windDirection >= 123.75 &&
+        latestWindDirection.windDirection <= 146.25
+      ) {
+        compass = "South East";
+      } else if (
+        latestWindDirection.windDirection >= 146.25 &&
+        latestWindDirection.windDirection <= 168.75
+      ) {
+        compass = "South South East";
+      } else if (
+        latestWindDirection.windDirection >= 168.75 &&
+        latestWindDirection.windDirection <= 191.25
+      ) {
+        compass = "South";
+      } else if (
+        latestWindDirection.windDirection >= 191.25 &&
+        latestWindDirection.windDirection <= 213.75
+      ) {
+        compass = "South South West";
+      } else if (
+        latestWindDirection.windDirection >= 213.75 &&
+        latestWindDirection.windDirection <= 236.25
+      ) {
+        compass = "South West";
+      } else if (
+        latestWindDirection.windDirection >= 236.25 &&
+        latestWindDirection.windDirection <= 258.75
+      ) {
+        compass = "West South West";
+      } else if (
+        latestWindDirection.windDirection >= 258.75 &&
+        latestWindDirection.windDirection <= 281.25
+      ) {
+        compass = "West";
+      } else if (
+        latestWindDirection.windDirection >= 281.25 &&
+        latestWindDirection.windDirection <= 303.75
+      ) {
+        compass = "West North West";
+      } else if (
+        latestWindDirection.windDirection >= 303.75 &&
+        latestWindDirection.windDirection <= 326.25
+      ) {
+        compass = "North West";
+      } else if (
+        latestWindDirection.windDirection >= 236.25 &&
+        latestWindDirection.windDirection <= 348.75
+      ) {
+        compass = "North North West";
+      }
     }
-    return bft;
+    return compass;
+  },
+  
+  getWindChill(station) {
+    let latestwindChillReading = null;
+    let latestWindChill = 0;
+    if (station.readings.length > 0) {
+      latestwindChillReading = station.readings[0];
+      for (let i = 1; i < station.readings.length; i++) {
+        latestwindChillReading = station.readings[i];
+        latestWindChill = Math.round(
+          13.12 +
+            0.6215 * latestwindChillReading.temp -
+            11.37 * Math.pow(latestwindChillReading.windSpeed, 0.16) +
+            0.3965 *
+              latestwindChillReading.temp *
+              Math.pow(latestwindChillReading.windSpeed, 0.16)
+        );
+      }
+    }
+    return latestWindChill;
   },
 
   

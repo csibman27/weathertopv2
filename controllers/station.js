@@ -30,7 +30,9 @@ const station = {
       tempInFahrenheit: stationAnalytics.getTempsInFahrenheit(station),
       pressure: stationAnalytics.getPressure(station),
       weatherIcon: stationAnalytics.getWeatherIcon(station),
-      windSpeed: stationAnalytics.getWindReading(station)
+      windSpeed: stationAnalytics.getWindReading(station),
+      windDirection: stationAnalytics.getWindDirection(station),
+      windChill: stationAnalytics.getWindChill(station)
       
       
     };
