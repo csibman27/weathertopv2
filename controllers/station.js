@@ -25,12 +25,12 @@ const station = {
       station: stationStore.getStation(stationId),
       latitude: station.latitude,
       longitude: station.longitude,
-      windSpeed: request.body.windSpeed,
       weather: stationAnalytics.getWeatherCode(station),
       tempInCelsius: stationAnalytics.getTemp(station),
       tempInFahrenheit: stationAnalytics.getTempsInFahrenheit(station),
       pressure: stationAnalytics.getPressure(station),
-      weatherIcon: stationAnalytics.getWeatherIcon(station)
+      weatherIcon: stationAnalytics.getWeatherIcon(station),
+      windSpeed: stationAnalytics.getWindReading(station)
       
       
     };
