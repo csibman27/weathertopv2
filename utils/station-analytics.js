@@ -3,30 +3,30 @@
 const data = require("../controllers/station");
 
 const stationAnalytics = {
-  getLatestReadingTemp(station) {
-    let latestReadingTemp = null;
+  getTemp(station) {
+    let latestTemp = null;
 
     if (station.readings.length > 0) {
-      latestReadingTemp = station.readings[0].temp;
+      latestTemp = station.readings[0].temp;
       for (let i = 1; i < station.readings.length; i++) {
-        latestReadingTemp = station.readings[i].temp;
+        latestTemp = station.readings[i].temp;
       }
     }
-    return latestReadingTemp;
+    return latestTemp;
   },
 
-  getLatestReadingPressure(station) {
-    let latestReadingPressure = null;
+  getPressure(station) {
+    let latestPressure = null;
     if (station.readings.length > 0) {
-      latestReadingPressure = station.readings[0].pressure;
+      latestPressure = station.readings[0].pressure;
       for (let i = 1; i < station.readings.length; i++) {
-        latestReadingPressure = station.readings[i].pressure;
+        latestPressure = station.readings[i].pressure;
       }
     }
-    return latestReadingPressure;
+    return latestPressure;
   },
   
-  getLatestWeatherCode(station) {
+  getWeatherCode(station) {
     let latestWeatherCode = null;
     let textCode = "Awaiting code entry";
 
@@ -62,11 +62,54 @@ const stationAnalytics = {
           textCode = "thunder";
           break;
         default:
-          textCode = "Automated weathercodes are not recognised";
+          textCode = "Other then set weathercodes are not recognised";
       }
     }
 
     return textCode;
+  },
+  
+  getWeatherIcon(station) {
+    let weatherCode = null;
+    let icon = "Awaiting code entry";
+
+    if (station.readings.length > 0) {
+      weatherCode = station.readings[0].code;
+      for (let i = 0; i < station.readings.length; i++) {
+        weatherCode = Number(station.readings[i].code);
+      }
+
+      switch (weatherCode) {
+        case 100:
+          icon = "sun icon";
+          break;
+        case 200:
+          icon = "cloud sun icon";
+          break;
+        case 300:
+          icon = "cloud icon";
+          break;
+        case 400:
+          icon = "cloud sun rain icon";
+          break;
+        case 500:
+          icon = "cloud rain icon";
+          break;
+        case 600:
+          icon = "cloud showers heavy icon";
+          break;
+        case 700:
+          icon = "snowflake icon";
+          break;
+        case 800:
+          icon = "bolt icon";
+          break;
+        default:
+          icon = "question circle icon";
+      }
+    }
+
+    return icon;
   },
   
   getNumber(station) {
@@ -74,7 +117,7 @@ const stationAnalytics = {
   },
   
   getTempsInCelsius(station) {
-    tempC = station.readings.temp.length() -1;
+    let tempC = station.readings.temp;
     return tempC;
   },
   

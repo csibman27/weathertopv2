@@ -26,10 +26,10 @@ const station = {
       latitude: station.latitude,
       longitude: station.longitude,
       windSpeed: request.body.windSpeed,
-      weather: stationAnalytics.getLatestWeatherCode(station),
-      tempInCelsius: station.readings.temp,
+      weather: stationAnalytics.getWeatherCode(station),
+      tempInCelsius: stationAnalytics.getTemp(station),
       tempInFahrenheit: stationAnalytics.getTempsInFahrenheit(station),
-      pressure: stationAnalytics.getLatestReadingPressure(station)
+      pressure: stationAnalytics.getPressure(station)
       
       
     };
