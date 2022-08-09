@@ -283,23 +283,23 @@ const stationAnalytics = {
   },
   
   getWindChill(station) {
-    let latestwindChillReading = null;
-    let latestWindChill = 0;
+    let windChillReading = null;
+    let windChill = 0;
     if (station.readings.length > 0) {
-      latestwindChillReading = station.readings[0];
+      windChillReading = station.readings[0];
       for (let i = 1; i < station.readings.length; i++) {
-        latestwindChillReading = station.readings[i];
-        latestWindChill = Math.round(
+        windChillReading = station.readings[i];
+        windChill = Math.round(
           13.12 +
-            0.6215 * latestwindChillReading.temp -
-            11.37 * Math.pow(latestwindChillReading.windSpeed, 0.16) +
+            0.6215 * windChillReading.temp -
+            11.37 * Math.pow(windChillReading.windSpeed, 0.16) +
             0.3965 *
-              latestwindChillReading.temp *
-              Math.pow(latestwindChillReading.windSpeed, 0.16)
+              windChillReading.temp *
+              Math.pow(windChillReading.windSpeed, 0.16)
         );
       }
     }
-    return latestWindChill;
+    return windChill;
   },
 
   
