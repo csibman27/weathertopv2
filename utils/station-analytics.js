@@ -81,35 +81,109 @@ const stationAnalytics = {
 
       switch (weatherCode) {
         case 100:
-          icon = "sun icon";
+          icon = "yellow sun icon";
           break;
         case 200:
-          icon = "cloud sun icon";
+          icon = "yellow cloud sun icon";
           break;
         case 300:
-          icon = "cloud icon";
+          icon = "grey cloud icon";
           break;
         case 400:
-          icon = "cloud sun rain icon";
+          icon = "blue cloud sun rain icon";
           break;
         case 500:
-          icon = "cloud rain icon";
+          icon = "blue cloud rain icon";
           break;
         case 600:
-          icon = "cloud showers heavy icon";
+          icon = "blue cloud showers heavy icon";
           break;
         case 700:
-          icon = "snowflake icon";
+          icon = "grey snowflake icon";
           break;
         case 800:
-          icon = "bolt icon";
+          icon = "blue bolt icon";
           break;
         default:
-          icon = "question circle icon";
+          icon = "red question circle icon";
       }
     }
 
     return icon;
+  },
+  
+  getWindReading(station) {
+    let latestWindReading = null;
+    let beaufort = "Awaiting Wind data";
+
+    if (station.readings.length > 0) {
+      latestWindReading = station.readings[0];
+      for (let i = 0; i < station.readings.length; i++) {
+        latestWindReading = station.readings[i];
+
+        if (latestWindReading.windSpeed <= 1) {
+          beaufort = "0 bft";
+        } else if (
+          latestWindReading.windSpeed > 1 &&
+          latestWindReading.windSpeed <= 5
+        ) {
+          beaufort = "1 bft";
+        } else if (
+          latestWindReading.windSpeed >= 6 &&
+          latestWindReading.windSpeed <= 11
+        ) {
+          beaufort = "2 bft";
+        } else if (
+          latestWindReading.windSpeed >= 12 &&
+          latestWindReading.windSpeed <= 19
+        ) {
+          beaufort = "3 bft";
+        } else if (
+          latestWindReading.windSpeed >= 20 &&
+          latestWindReading.windSpeed <= 28
+        ) {
+          beaufort = "4 bft";
+        } else if (
+          latestWindReading.windSpeed >= 29 &&
+          latestWindReading.windSpeed <= 38
+        ) {
+          beaufort = "5 bft";
+        } else if (
+          latestWindReading.windSpeed >= 39 &&
+          latestWindReading.windSpeed <= 49
+        ) {
+          beaufort = "6 bft";
+        } else if (
+          latestWindReading.windSpeed >= 50 &&
+          latestWindReading.windSpeed <= 11
+        ) {
+          beaufort = "7 bft";
+        } else if (
+          latestWindReading.windSpeed >= 62 &&
+          latestWindReading.windSpeed <= 74
+        ) {
+          beaufort = "8 bft";
+        } else if (
+          latestWindReading.windSpeed >= 75 &&
+          latestWindReading.windSpeed <= 88
+        ) {
+          beaufort = "9 bft";
+        } else if (
+          latestWindReading.windSpeed >= 89 &&
+          latestWindReading.windSpeed <= 102
+        ) {
+          beaufort = "10 bft";
+        } else if (
+          latestWindReading.windSpeed >= 103 &&
+          latestWindReading.winSspeed <= 117
+        ) {
+          beaufort = "11 bft";
+        } else {
+          beaufort = "Enter a number between 1 - 117 for valid code";
+        }
+      }
+      return beaufort;
+    }
   },
   
   getNumber(station) {
