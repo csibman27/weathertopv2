@@ -20,7 +20,7 @@ const dashboard = {
     const viewData = {
       title: "Station Dashboard",
       stations: stationStore.getUserStations(loggedInUser.id),
-      weather: stationAnalytics.getWeatherCode(station),
+      weather: station.weather = stationAnalytics.getWeatherCode(station)
     };
       
     logger.info("about to render", stationStore.getUserStations());
