@@ -6,6 +6,7 @@ const logger = require("../utils/logger");
 const stationStore = require("../models/station-store");
 const uuid = require("uuid");
 const station = require("./station.js");
+const stationAnalytics = require("../utils/station-analytics");
 
 
 const dashboard = {
@@ -18,24 +19,13 @@ const dashboard = {
     for (let i = 0; i < stations.length; i++) {
       let station = stations[i];
       if (station.readings.length > 0) {
-        station.viewdata(station);
+        stationAnalytics.getWeatherCode;
       }
     }
     
     const viewData = {
       title: "Station Dashboard",
       stations: stationStore.getUserStations(loggedInUser.id),
-      name: dashboard.name,
-      latitude: dashboard.latitude,
-      longitude: dashboard.longitude,
-      //weather: stationAnalytics.getWeatherCode(station),
-      //tempInCelsius: stationAnalytics.getTemp(station),
-      //tempInFahrenheit: stationAnalytics.getTempsInFahrenheit(station),
-      //pressure: stationAnalytics.getPressure(station),
-      //weatherIcon: stationAnalytics.getWeatherIcon(station),
-      //windSpeed: stationAnalytics.getWindReading(station),
-      //windDirection: stationAnalytics.getWindDirection(station),
-      //windChill: stationAnalytics.getWindChill(station)
     };
       
     logger.info("about to render", stationStore.getUserStations());
