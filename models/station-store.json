@@ -16,77 +16,13 @@
       "longitude": "2",
       "readings": [
         {
-          "id": "98939e20-175a-11ed-a0f6-5bed7656ad2b",
-          "code": "2",
-          "windSpeed": "2",
+          "id": "92a6e8c0-2009-11ed-8fd2-cd7132471807",
+          "code": "100",
+          "temp": "10",
+          "windSpeed": "23",
           "windDirection": "2",
-          "pressure": "2",
-          "timestamp": "2022-8-8 T 21:42:9"
-        },
-        {
-          "id": "36d4b360-175d-11ed-9e41-3d32e738ac99",
-          "code": "100",
-          "windSpeed": "2",
-          "windDirection": "12",
           "pressure": "1000",
-          "timestamp": "2022-8-8 T 22:0:16"
-        },
-        {
-          "id": "4bdb2d10-180d-11ed-8061-2de791155e93",
-          "code": "400",
-          "windSpeed": "1",
-          "windDirection": "1",
-          "pressure": "1",
-          "timestamp": "2022-8-9 T 19:1:19"
-        },
-        {
-          "id": "91973240-180d-11ed-8061-2de791155e93",
-          "code": "500",
-          "windSpeed": "1",
-          "windDirection": "1",
-          "pressure": "1",
-          "timestamp": "2022-8-9 T 19:1:19"
-        },
-        {
-          "id": "97028680-180d-11ed-8061-2de791155e93",
-          "code": "600",
-          "windSpeed": "1",
-          "windDirection": "1",
-          "pressure": "1",
-          "timestamp": "2022-8-9 T 19:1:19"
-        },
-        {
-          "id": "9bb7d130-180d-11ed-8061-2de791155e93",
-          "code": "700",
-          "windSpeed": "1",
-          "windDirection": "1",
-          "pressure": "1",
-          "timestamp": "2022-8-9 T 19:1:19"
-        },
-        {
-          "id": "2bd91850-180e-11ed-9bd1-f5b954f8c0dc",
-          "code": "800",
-          "windSpeed": "1",
-          "windDirection": "1",
-          "pressure": "1",
-          "timestamp": "2022-8-9 T 19:6:23"
-        },
-        {
-          "id": "aa8399f0-1813-11ed-a95d-2b3a09f1c7a9",
-          "code": "100",
-          "windSpeed": "100",
-          "windDirection": "10",
-          "pressure": "5000",
-          "timestamp": "2022-8-9 T 19:41:21"
-        },
-        {
-          "id": "003f89d0-1814-11ed-a95d-2b3a09f1c7a9",
-          "code": "1",
-          "temp": "1",
-          "windSpeed": "1",
-          "windDirection": "1",
-          "pressure": "1",
-          "timestamp": "2022-8-9 T 19:41:21"
+          "timestamp": "2022-8-19 T 22:53:59"
         }
       ]
     }

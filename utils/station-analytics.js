@@ -99,7 +99,7 @@ const stationAnalytics = {
           icon = "blue cloud showers heavy icon";
           break;
         case 700:
-          icon = "grey snowflake icon";
+          icon = "blue snowflake icon";
           break;
         case 800:
           icon = "blue bolt icon";

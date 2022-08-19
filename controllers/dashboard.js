@@ -13,12 +13,12 @@ const dashboard = {
     const allstations = stationStore.getAllStations();
     const stations = allstations.sort();
     
-   // for (let i = 0; i < stations.length; i++) {
-    //  let station = stations[i];
-     // if (station.readings.length > 0) {
-       // updateReadings.getUpdateReading(station);
-      //}
-    //}
+    for (let i = 0; i < stations.length; i++) {
+      let station = stations[i];
+      if (station.readings.length > 0) {
+        stationStore.getUserStations(station);
+      }
+    }
     
     const viewData = {
       title: "Station Dashboard",
