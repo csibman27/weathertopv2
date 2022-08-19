@@ -25,6 +25,14 @@
           "timestamp": "2022-8-19 T 22:53:59"
         }
       ]
+    },
+    {
+      "id": "b1eb9560-2012-11ed-9239-77748189ad95",
+      "userid": "bad1d2d0-163e-11ed-8b94-99f4f5285bf9",
+      "stationName": "Lamanch",
+      "latitude": "12",
+      "longitude": "12",
+      "readings": []
     }
   ]
 }
