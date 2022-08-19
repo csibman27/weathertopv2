@@ -15,15 +15,7 @@ const dashboard = {
     const loggedInUser = accounts.getCurrentUser(request);
     const allstations = stationStore.getAllStations();
     const stations = allstations.sort(); 
-    const stationId = request.params.id;
-    const station = stationStore.getStation(stationId);
     
-    for (let i = 0; i < stations.length; i++) {
-      let station = stations[i];
-      if (station.readings.length > 0) {
-       // updateReadings.getUpdateReading(station);
-      }
-    }
     const viewData = {
       title: "Station Dashboard",
       stations: stationStore.getUserStations(loggedInUser.id),
