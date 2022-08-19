@@ -14,18 +14,13 @@ const dashboard = {
     logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
     const allstations = stationStore.getAllStations();
-    const stations = allstations.sort();
-    
-    for (let i = 0; i < stations.length; i++) {
-      let station = stations[i];
-      if (station.readings.length > 0) {
-        stationAnalytics.getWeatherCode;
-      }
-    }
-    
+    const stations = allstations.sort(); 
+    const stationId = request.params.id;
+    const station = stationStore.getStation(stationId);
     const viewData = {
       title: "Station Dashboard",
       stations: stationStore.getUserStations(loggedInUser.id),
+      weather: stationAnalytics.getWeatherCode(station),
     };
       
     logger.info("about to render", stationStore.getUserStations());
