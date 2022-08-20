@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   
+<head>
+  <meta charset="UTF-8">
+  <title>stationsummary</title>
+</head>
+<body> 
 <div class="ui inverted five blue stackable cards">
     <div class="ui card">
         <div class="content">
             <i class="right floated big green thumbtack alternate icon"></i>
             <div class="header">
-                ${_station.name}
+                {{stationName}}
             </div>
-            <div class="item">Lat: ${_station.latitude}</div>
-            <div class="item">Lng: ${_station.longitude}</div>
+            <div class="ui tiny header">Lat: {{latitude}}</div>
+            <div class="ui tiny header">Lng: {{longitude}}</div>
         </div>
     </div>
     <div class="ui link card">
         <div class="content">
-            <i class="right floated big yellow cloud sun icon"></i>
+            <i class="right floated big {{ weatherIcon }}"></i>
             <div class="header">
                 Weather
             </div>
-            <div class="item">${_station.weather}</div>
+            <div class="ui tiny header">{{weather}}</div>
         </div>
     </div>
     <div class="ui link card">
           <div class="content">
-            <i class="right floated big black temperature low icon"></i>
+            <i class="right floated big blue temperature icon"></i>
             <div class="header">
                 Temp
             </div>
-            <div class="item">${_station.tempC}C</div>
-            <div class="item">${_station.tempF}F</div>
+            <div class="ui tiny header">{{tempInCelsius}}C</div>
+            <div class="ui tiny header">{{tempInFahrenheit}}F</div>
             <div class="item"></div>
             <div class="item">
                 <i class="right floated big blue icon"></i>
@@ -41,13 +46,10 @@
             <div class="header">
                 Wind
             </div>
-            <div class="item">${_station.wind} bft / ${_station.windFeeling}</div>
-            <div class="item">Compass: ${_station.windDirection}</div>
-            <div class="item">
-                Feels like:
-            </div>
-            <div class="item">
-                ${_station.windChill.round(1)}
+           <div class="ui tiny header"> {{ windSpeed }} </div>
+            <div class="ui tiny header"> Compass: {{ windDirection }}</div>
+            <div class="ui tiny header">
+                Feels like: {{ windChill }}
             </div>
         </div>
     </div>
@@ -57,7 +59,9 @@
             <div class="header">
                 Pressure
             </div>
-            <div class="item">${_station.pressure} hpa</div>
+            <div class="ui tiny header">{{ pressure }} hpa</div>
         </div>
     </div>
 </div>
+</body> 
+</html>
