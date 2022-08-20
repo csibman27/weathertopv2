@@ -28,14 +28,14 @@
     </div>
     <div class="ui link card">
           <div class="content">
-            <i class="right floated big blue temperature icon"></i>
+            <i class="right floated big green temperature icon"></i>
             <div class="header">
                 Temp
             </div>
             <div class="ui tiny header">{{tempInCelsius}}° C</div>
             <div class="ui tiny header">{{tempInFahrenheit}}° F</div>
-            <div class="ui tiny header">min {{minTempInCelsius}}° C</div>
-            <div class="ui tiny header">max {{maxTempInFahrenheit}}° F</div>
+            <div class="ui tiny header">min {{minTempInCelsius}}° C | max {{maxTempInCelsius}}° C</div>
+            
             <div class="item"></div>
             <div class="item">
                 <i class="right floated big blue icon"></i>
@@ -50,8 +50,7 @@
             </div>
            <div class="ui tiny header"> {{ windSpeed }} </div>
             <div class="ui tiny header"> Compass: {{ windDirection }}</div>
-            <div class="ui tiny header">
-                Feels like: {{ windChill }}
+            <div class="ui tiny header"> Feels like: {{ windChill }} ° C
             </div>
         </div>
     </div>
@@ -62,6 +61,7 @@
                 Pressure
             </div>
             <div class="ui tiny header">{{ pressure }} hpa</div>
+            <div class="ui tiny header">min {{ minPressure }} | max {{ maxPressure }} hpa</div>
         </div>
     </div>
 </div>

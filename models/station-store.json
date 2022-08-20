@@ -32,9 +32,25 @@
           "windDirection": "10",
           "pressure": "2000",
           "timestamp": "2022-8-20 T 20:12:1"
+        },
+        {
+          "id": "8ab5f3a0-20d0-11ed-bde6-371c680d28a7",
+          "code": "400",
+          "temp": "15",
+          "windSpeed": "15",
+          "windDirection": "22",
+          "pressure": "9000",
+          "timestamp": "2022-8-20 T 22:38:3"
         }
       ],
-      "weather": "clear"
+      "weather": "partial Clouds",
+      "tempInCelsius": "10",
+      "tempInFahrenheit": 50,
+      "pressure": "2000",
+      "weatherIcon": "yellow cloud sun icon",
+      "windSpeed": "2 bft",
+      "windDirection": "North",
+      "windChill": 9
     }
   ]
 }
