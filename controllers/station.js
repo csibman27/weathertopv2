@@ -32,7 +32,8 @@ const station = {
       weatherIcon: stationAnalytics.getWeatherIcon(station),
       windSpeed: stationAnalytics.getWindReading(station),
       windDirection: stationAnalytics.getWindDirection(station),
-      windChill: stationAnalytics.getWindChill(station)
+      windChill: stationAnalytics.getWindChill(station),
+      minTempInCelsius: stationAnalytics.
       
       
     };
