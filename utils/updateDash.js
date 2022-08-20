@@ -1,6 +1,6 @@
-const stationAnalytics = require("../utils/station-analytics");
+"use strict";
 
-("use strict");
+const stationAnalytics = require("../utils/station-analytics");
 
 const updateDash = {
   getUpdateDash(station) {
