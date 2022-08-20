@@ -23,9 +23,10 @@ const dashboard = {
     const updateDash = {
       getUpdateDash(station) {
         station.weather = stationAnalytics.getWeatherCode(station);
+        station
       }
     };
-      
+
     logger.info("about to render", stationStore.getUserStations());
     response.render("dashboard", viewData);
   },
