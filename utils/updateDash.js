@@ -11,7 +11,7 @@ const updateDash = {
      station.weatherIcon = stationAnalytics.getWeatherIcon(station),
      station.windSpeed = stationAnalytics.getWindReading(station),
      station.windDirection = stationAnalytics.getWindDirection(station),
-      windChill = stationAnalytics.getWindChill(station)
+     station.windChill = stationAnalytics.getWindChill(station)
     
   }
 };
