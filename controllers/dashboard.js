@@ -22,7 +22,7 @@ const dashboard = {
     };
     const updateDash = {
       getUpdateDash(station) {
-        station.weather = stationAnalytics.getWeatherCode(station)
+        station.weather = stationAnalytics.getWeatherCode(station);
       }
     };
       
