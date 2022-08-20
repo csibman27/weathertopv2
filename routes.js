@@ -1,4 +1,4 @@
-"use strict";
+router.get('/openweather/:id/autoReading"use strict";
 
 const express = require("express");
 const router = express.Router();
@@ -15,7 +15,9 @@ router.get('/login', accounts.login);
 router.get('/signup', accounts.signup);
 router.get('/logout', accounts.logout);
 router.post('/register', accounts.register);
-router.post('/authenticate', accounts.authenticate);
+router.post('/router.post('/openWeatherautaccounts openWeatherthenticate);
+
+router.get('/openweather/:id/autoReading', openweather.autoReading);
 
 //dash station
 router.get('/station/:id', station.index);
@@ -30,11 +32,8 @@ router.get('/station/:id/deletereading/:readingid', station.deleteReading);
 //router.get('/reading/:id/editreading/:readingid', reading.index);
 //router.post('/reading/:id/updatereading/:readingid', reading.update);
 
-router.post('/station/:id/autoreading', openweather.openWeather);
-
 //menu
-router.get('/dashboard', dashboard.index);
-router.get('/about', about.index);
+router.get('/dashboard', daut.index);
 
 
 
