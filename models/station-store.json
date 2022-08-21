@@ -9,53 +9,9 @@
       "readings": []
     },
     {
-      "id": "933c7580-1757-11ed-89c8-2f8538cb1df5",
+      "id": "0521f5e0-2152-11ed-be06-b73d0e69d731",
       "userid": "bad1d2d0-163e-11ed-8b94-99f4f5285bf9",
       "stationName": "Waterford",
-      "latitude": "1",
-      "longitude": "2",
-      "readings": [
-        {
-          "id": "92a6e8c0-2009-11ed-8fd2-cd7132471807",
-          "code": "100",
-          "temp": "10",
-          "windSpeed": "23",
-          "windDirection": "2",
-          "pressure": "1000",
-          "timestamp": "2022-8-19 T 22:53:59"
-        },
-        {
-          "id": "17bb3a40-20bc-11ed-8e55-b1da4a9589c3",
-          "code": "200",
-          "temp": "10",
-          "windSpeed": "10",
-          "windDirection": "10",
-          "pressure": "2000",
-          "timestamp": "2022-8-20 T 20:12:1"
-        },
-        {
-          "id": "8ab5f3a0-20d0-11ed-bde6-371c680d28a7",
-          "code": "400",
-          "temp": "15",
-          "windSpeed": "15",
-          "windDirection": "22",
-          "pressure": "9000",
-          "timestamp": "2022-8-20 T 22:38:3"
-        }
-      ],
-      "weather": "partial Clouds",
-      "tempInCelsius": "10",
-      "tempInFahrenheit": 50,
-      "pressure": "2000",
-      "weatherIcon": "yellow cloud sun icon",
-      "windSpeed": "2 bft",
-      "windDirection": "North",
-      "windChill": 9
-    },
-    {
-      "id": "366cd060-214e-11ed-9c7e-fd8f6d7f6632",
-      "userid": "bad1d2d0-163e-11ed-8b94-99f4f5285bf9",
-      "stationName": "Waterford2",
       "latitude": "52.2593",
       "longitude": "7.1101",
       "readings": []
