@@ -43,20 +43,87 @@
             "27/7/2022",
             "28/7/2022"
           ]
+        },
+        {
+          "id": "dd4f71c0-2168-11ed-af43-71ef53edff67",
+          "code": 500,
+          "temp": 25.77,
+          "windSpeed": 2.01,
+          "pressure": 1011,
+          "windDirection": 99,
+          "timestamp": "Sun Aug 21 2022 15:49:39 GMT+0000 (Coordinated Universal Time)",
+          "tempTrend": [
+            28.07,
+            26.86,
+            27.08,
+            25.67,
+            26.47,
+            28.74,
+            28.02,
+            27.77
+          ],
+          "trendLabels": [
+            "21/7/2022",
+            "22/7/2022",
+            "23/7/2022",
+            "24/7/2022",
+            "25/7/2022",
+            "26/7/2022",
+            "27/7/2022",
+            "28/7/2022"
+          ]
         }
       ],
-      "weather": "Clear",
-      "tempInCelsius": "1",
-      "tempInFahrenheit": 33.8,
-      "pressure": "1",
-      "weatherIcon": "yellow sun icon",
-      "windSpeed": "0 bft",
-      "windDirection": "North",
-      "windChill": 3,
-      "minTempInCelsius": "1",
-      "maxTempInCelsius": 25.9,
-      "minPressure": "1",
+      "weather": "Heavy Showers",
+      "tempInCelsius": 25.77,
+      "tempInFahrenheit": 78.386,
+      "pressure": 1011,
+      "weatherIcon": "blue cloud rain icon",
+      "windSpeed": "1 bft",
+      "windDirection": "East",
+      "windChill": 28,
+      "minTempInCelsius": 25.58,
+      "maxTempInCelsius": 25.77,
+      "minPressure": 1011,
       "maxPressure": 1011
+    },
+    {
+      "id": "b43ea340-2169-11ed-9477-8dc04d5a2e57",
+      "userid": "bad1d2d0-163e-11ed-8b94-99f4f5285bf9",
+      "stationName": "Waterford",
+      "latitude": "52.2593",
+      "longitude": "7.1101",
+      "readings": [
+        {
+          "id": "b6c3c780-2169-11ed-9477-8dc04d5a2e57",
+          "code": 804,
+          "temp": 25.22,
+          "windSpeed": 5.76,
+          "pressure": 1015,
+          "windDirection": 323,
+          "timestamp": "Sun Aug 21 2022 15:55:43 GMT+0000 (Coordinated Universal Time)",
+          "tempTrend": [
+            24.43,
+            25.26,
+            29.05,
+            31.85,
+            30.68,
+            33.45,
+            30.51,
+            27.14
+          ],
+          "trendLabels": [
+            "21/7/2022",
+            "22/7/2022",
+            "23/7/2022",
+            "24/7/2022",
+            "25/7/2022",
+            "26/7/2022",
+            "27/7/2022",
+            "28/7/2022"
+          ]
+        }
+      ]
     }
   ]
 }

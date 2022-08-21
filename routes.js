@@ -32,8 +32,6 @@ router.get('/station/:id/deletereading/:readingid', station.deleteReading);
 
 //autoreading
 router.post("/station/:id/autoreading", station.autoReading);
-//test
-router.post("/station/autoreading", station.autoReading);
 
 //menu
 router.get('/dashboard', dashboard.index);
