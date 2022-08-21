@@ -16,15 +16,6 @@
       "longitude": "7.1101",
       "readings": [
         {
-          "id": "4deadb00-2154-11ed-8b9e-7f29dde8a497",
-          "code": "100",
-          "temp": "10",
-          "windSpeed": "12",
-          "windDirection": "13",
-          "pressure": "1000",
-          "timestamp": "2022-8-21 T 14:19:7"
-        },
-        {
           "code": 804,
           "temp": 24.82,
           "windSpeed": 4.46,
@@ -39,6 +30,14 @@
           "pressure": 1015,
           "windDirection": 250,
           "timestamp": "Sun Aug 21 2022 13:26:31 GMT+0000 (Coordinated Universal Time)"
+        },
+        {
+          "code": 804,
+          "temp": 25.73,
+          "windSpeed": 4.21,
+          "pressure": 1014,
+          "windDirection": 260,
+          "timestamp": "Sun Aug 21 2022 13:40:46 GMT+0000 (Coordinated Universal Time)"
         }
       ]
     }
