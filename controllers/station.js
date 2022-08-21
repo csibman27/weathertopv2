@@ -104,7 +104,7 @@ const station = {
         title: "Weather Report",
         reading: report
     };
-    response.render("dashboard", viewData);
+    response.render("station", viewData);
     stationStore.addAutoReading(stationId, report);
     response.redirect("/station/" + stationId);
     console.log(report);
