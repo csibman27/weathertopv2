@@ -62,7 +62,7 @@ const stationAnalytics = {
           textCode = "thunder";
           break;
         default:
-          textCode = "Other then set weathercodes are not recognised";
+          textCode = "Out of scope weathercodes are not recognised";
       }
     }
 
@@ -76,36 +76,12 @@ const stationAnalytics = {
     if (station.readings.length > 0) {
       weatherCode = station.readings[0].code;
       for (let i = 0; i < station.readings.length; i++) {
-        weatherCode = Number(station.readings[i].code);
+        weatherCode = station.readings[i];
       }
-
-      switch (weatherCode) {
-        case 100:
+  
+      if (weatherCode.code >= 100) {
           icon = "yellow sun icon";
-          break;
-        case 200:
-          icon = "yellow cloud sun icon";
-          break;
-        case 300:
-          icon = "grey cloud icon";
-          break;
-        case 400:
-          icon = "blue cloud sun rain icon";
-          break;
-        case 500:
-          icon = "blue cloud rain icon";
-          break;
-        case 600:
-          icon = "blue cloud showers heavy icon";
-          break;
-        case 700:
-          icon = "blue snowflake icon";
-          break;
-        case 800:
-          icon = "blue bolt icon";
-          break;
-        default:
-          icon = "red question circle icon";
+      
       }
     }
 

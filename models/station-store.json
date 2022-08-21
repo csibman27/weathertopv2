@@ -14,7 +14,46 @@
       "stationName": "Sligo",
       "latitude": "44",
       "longitude": "7",
-      "readings": []
+      "readings": [
+        {
+          "id": "cae7f690-2160-11ed-86f0-db4ab27f39a3",
+          "code": 804,
+          "temp": 25.9,
+          "windSpeed": 2.04,
+          "pressure": 1011,
+          "windDirection": 98,
+          "timestamp": "Sun Aug 21 2022 14:51:52 GMT+0000 (Coordinated Universal Time)",
+          "tempTrend": [
+            27.64,
+            26.86,
+            27.08,
+            25.67,
+            26.47,
+            28.74,
+            28.02,
+            27.77
+          ],
+          "trendLabels": [
+            "21/7/2022",
+            "22/7/2022",
+            "23/7/2022",
+            "24/7/2022",
+            "25/7/2022",
+            "26/7/2022",
+            "27/7/2022",
+            "28/7/2022"
+          ]
+        },
+        {
+          "id": "be13b3e0-2161-11ed-ab0b-29b4c07b26cb",
+          "code": "100",
+          "temp": "1",
+          "windSpeed": "1",
+          "windDirection": "1",
+          "pressure": "1",
+          "timestamp": "2022-8-21 T 15:58:31"
+        }
+      ]
     }
   ]
 }
