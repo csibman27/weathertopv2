@@ -82,6 +82,7 @@ const station = {
       const result = await axios.get(requestUrl);
       if (result.status == 200) {
         const reading = result.data.current;
+        report.id = uuid.v1();
         report.code = reading.weather[0].id;
         report.temp = reading.temp;
         report.windSpeed = reading.wind_speed;
