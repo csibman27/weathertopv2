@@ -37,6 +37,10 @@
 </form>
 <div class="ui segment" id="chart"></div>
 
+<form  class="ui stacked segment form" action="/station/{{station.id}}/autoreading" method="POST">
+<button class="ui red submit button"> Auto Generate Report</button>
+</form> 
+
 <script>
   const data = {
     labels: [
