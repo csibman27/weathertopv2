@@ -56,15 +56,74 @@
           "timestamp": "Sun Aug 21 2022 14:06:58 GMT+0000 (Coordinated Universal Time)"
         },
         {
-          "id": "c083bbc0-215c-11ed-92b2-4759537c877b",
-          "code": "1",
-          "temp": "1",
-          "windSpeed": "1",
-          "windDirection": "1",
-          "pressure": "1",
-          "timestamp": "2022-8-21 T 15:21:52"
+          "code": 804,
+          "temp": 25.57,
+          "windSpeed": 5.17,
+          "pressure": 1014,
+          "windDirection": 302,
+          "timestamp": "Sun Aug 21 2022 14:36:16 GMT+0000 (Coordinated Universal Time)",
+          "tempTrend": [
+            24.66,
+            25.26,
+            29.05,
+            31.85,
+            30.68,
+            33.45,
+            30.51,
+            27.14
+          ],
+          "trendLabels": [
+            "21/7/2022",
+            "22/7/2022",
+            "23/7/2022",
+            "24/7/2022",
+            "25/7/2022",
+            "26/7/2022",
+            "27/7/2022",
+            "28/7/2022"
+          ]
+        },
+        {
+          "code": 804,
+          "temp": 25.6,
+          "windSpeed": 5.17,
+          "pressure": 1014,
+          "windDirection": 302,
+          "timestamp": "Sun Aug 21 2022 14:38:19 GMT+0000 (Coordinated Universal Time)",
+          "tempTrend": [
+            24.66,
+            25.26,
+            29.05,
+            31.85,
+            30.68,
+            33.45,
+            30.51,
+            27.14
+          ],
+          "trendLabels": [
+            "21/7/2022",
+            "22/7/2022",
+            "23/7/2022",
+            "24/7/2022",
+            "25/7/2022",
+            "26/7/2022",
+            "27/7/2022",
+            "28/7/2022"
+          ]
         }
-      ]
+      ],
+      "weather": "Other then set weathercodes are not recognised",
+      "tempInCelsius": "1",
+      "tempInFahrenheit": 33.8,
+      "pressure": "1",
+      "weatherIcon": "red question circle icon",
+      "windSpeed": "0 bft",
+      "windDirection": "North",
+      "windChill": 3,
+      "minTempInCelsius": "1",
+      "maxTempInCelsius": 25.73,
+      "minPressure": "1",
+      "maxPressure": 1015
     }
   ]
 }
