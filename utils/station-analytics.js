@@ -36,12 +36,33 @@ const stationAnalytics = {
         latestWeatherCode = Number(station.readings[i].code);
       }
 
-      if (latestWeatherCode > 0 && latestWeatherCode <= 100) {
-          textCode = "clear";
+      if (latestWeatherCode > 0 && latestWeatherCode <= 199) {
+          textCode = "Clear";
       } else if (
-        latestWeatherCode > 100 && latestWeatherCode <= 200) {
-          textCode = "partial Clouds";
-      }
+        latestWeatherCode > 199 && latestWeatherCode <= 299) {
+          textCode = "Partial Clouds";
+      } else if (
+        latestWeatherCode > 299 && latestWeatherCode <= 399) {
+          textCode = "Cloudy";
+      } else if (
+        latestWeatherCode > 399 && latestWeatherCode <= 499) {
+          textCode = "Light Showers";
+      } else if (
+        latestWeatherCode > 499 && latestWeatherCode <= 599) {
+          textCode = "Heavy Showers";
+      } else if (
+        latestWeatherCode > 599 && latestWeatherCode <= 699) {
+          textCode = "Rain";
+      } else if (
+        latestWeatherCode > 699 && latestWeatherCode <= 799) {
+          textCode = "Snow";
+      } else if (
+        latestWeatherCode > 799 && latestWeatherCode <= 899) {
+          textCode = "Thunder";
+      } else if (
+        latestWeatherCode > 900) {
+          textCode = "Out of Scope, weathercode not recognised!";
+      } 
       
     }
 
