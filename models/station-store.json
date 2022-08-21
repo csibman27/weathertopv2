@@ -56,13 +56,13 @@
           "timestamp": "Sun Aug 21 2022 14:06:58 GMT+0000 (Coordinated Universal Time)"
         },
         {
-          "id": "6223b040-215b-11ed-8ba6-2b67d61d82d5",
-          "code": "100",
+          "id": "c083bbc0-215c-11ed-92b2-4759537c877b",
+          "code": "1",
           "temp": "1",
           "windSpeed": "1",
           "windDirection": "1",
           "pressure": "1",
-          "timestamp": "2022-8-21 T 15:12:57"
+          "timestamp": "2022-8-21 T 15:21:52"
         }
       ]
     }
