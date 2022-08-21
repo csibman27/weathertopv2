@@ -72,6 +72,35 @@
             "27/7/2022",
             "28/7/2022"
           ]
+        },
+        {
+          "id": "a94c2370-216b-11ed-9477-8dc04d5a2e57",
+          "code": 500,
+          "temp": 25.45,
+          "windSpeed": 2.01,
+          "pressure": 1011,
+          "windDirection": 99,
+          "timestamp": "Sun Aug 21 2022 16:09:40 GMT+0000 (Coordinated Universal Time)",
+          "tempTrend": [
+            28.07,
+            26.86,
+            27.08,
+            25.67,
+            26.47,
+            28.74,
+            28.02,
+            27.77
+          ],
+          "trendLabels": [
+            "21/7/2022",
+            "22/7/2022",
+            "23/7/2022",
+            "24/7/2022",
+            "25/7/2022",
+            "26/7/2022",
+            "27/7/2022",
+            "28/7/2022"
+          ]
         }
       ],
       "weather": "Heavy Showers",
@@ -123,7 +152,19 @@
             "28/7/2022"
           ]
         }
-      ]
+      ],
+      "weather": "Thunder",
+      "tempInCelsius": 25.22,
+      "tempInFahrenheit": 25.22,
+      "pressure": 1015,
+      "weatherIcon": "blue bolt icon",
+      "windSpeed": "Enter a number between 1 - 117 for valid code",
+      "windDirection": "North West",
+      "windChill": 0,
+      "minTempInCelsius": 25.22,
+      "maxTempInCelsius": 25.22,
+      "minPressure": 1015,
+      "maxPressure": 1015
     }
   ]
 }
