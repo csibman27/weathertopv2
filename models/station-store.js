@@ -48,6 +48,12 @@ const stationStore = {
 
   getUserStations(userid) {
     return this.store.findBy(this.collection, { userid: userid });
+  },
+  
+  addAutoReading(id, reading) {
+  const station = this.getStation(id);
+  station.readings.push(reading);
+  this.store.save();
   }
 };
 
