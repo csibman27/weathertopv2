@@ -16,118 +16,15 @@
       "longitude": "7",
       "readings": [
         {
-          "id": "cae7f690-2160-11ed-86f0-db4ab27f39a3",
-          "code": 804,
-          "temp": 25.9,
-          "windSpeed": 2.04,
-          "pressure": 1011,
-          "windDirection": 98,
-          "timestamp": "Sun Aug 21 2022 14:51:52 GMT+0000 (Coordinated Universal Time)",
-          "tempTrend": [
-            27.64,
-            26.86,
-            27.08,
-            25.67,
-            26.47,
-            28.74,
-            28.02,
-            27.77
-          ],
-          "trendLabels": [
-            "21/7/2022",
-            "22/7/2022",
-            "23/7/2022",
-            "24/7/2022",
-            "25/7/2022",
-            "26/7/2022",
-            "27/7/2022",
-            "28/7/2022"
-          ]
-        },
-        {
-          "id": "be13b3e0-2161-11ed-ab0b-29b4c07b26cb",
-          "code": "100",
-          "temp": "1",
-          "windSpeed": "1",
-          "windDirection": "1",
-          "pressure": "1",
-          "timestamp": "2022-8-21 T 15:58:31"
-        },
-        {
-          "id": "16b389d0-2162-11ed-9cdb-4772c9a17a31",
-          "code": "100",
-          "temp": "12",
-          "windSpeed": "12",
-          "windDirection": "12",
-          "pressure": "12",
-          "timestamp": "2022-8-21 T 16:1:0"
-        },
-        {
-          "id": "8181ea40-2162-11ed-84dc-d51941afcaab",
-          "code": "1",
-          "temp": "1",
-          "windSpeed": "1",
-          "windDirection": "1",
-          "pressure": "1",
-          "timestamp": "2022-8-21 T 16:4:0"
-        },
-        {
-          "id": "8a61a4c0-2162-11ed-84dc-d51941afcaab",
-          "code": "50",
-          "temp": "50",
-          "windSpeed": "60",
-          "windDirection": "70",
-          "pressure": "1000",
-          "timestamp": "2022-8-21 T 16:4:0"
-        },
-        {
-          "id": "d98d2150-2162-11ed-b74f-950ab5615075",
-          "code": "101",
-          "temp": "12",
-          "windSpeed": "12",
-          "windDirection": "12",
-          "pressure": "12",
-          "timestamp": "2022-8-21 T 16:6:25"
-        },
-        {
-          "id": "768b4130-2163-11ed-bde0-95871cf19fba",
-          "code": 804,
-          "temp": 25.93,
-          "windSpeed": 2.04,
-          "pressure": 1011,
-          "windDirection": 98,
-          "timestamp": "Sun Aug 21 2022 15:10:59 GMT+0000 (Coordinated Universal Time)",
-          "tempTrend": [
-            27.64,
-            26.86,
-            27.08,
-            25.67,
-            26.47,
-            28.74,
-            28.02,
-            27.77
-          ],
-          "trendLabels": [
-            "21/7/2022",
-            "22/7/2022",
-            "23/7/2022",
-            "24/7/2022",
-            "25/7/2022",
-            "26/7/2022",
-            "27/7/2022",
-            "28/7/2022"
-          ]
-        },
-        {
-          "id": "fe2b4c10-2164-11ed-a2ba-adfd1d0969ca",
-          "code": 804,
+          "id": "6ac3efc0-2166-11ed-b199-d1411d1d8a71",
+          "code": 500,
           "temp": 25.58,
-          "windSpeed": 2.04,
+          "windSpeed": 2.01,
           "pressure": 1011,
-          "windDirection": 98,
-          "timestamp": "Sun Aug 21 2022 15:21:56 GMT+0000 (Coordinated Universal Time)",
+          "windDirection": 99,
+          "timestamp": "Sun Aug 21 2022 15:32:07 GMT+0000 (Coordinated Universal Time)",
           "tempTrend": [
-            27.57,
+            28.07,
             26.86,
             27.08,
             25.67,
@@ -147,7 +44,19 @@
             "28/7/2022"
           ]
         }
-      ]
+      ],
+      "weather": "Clear",
+      "tempInCelsius": "1",
+      "tempInFahrenheit": 33.8,
+      "pressure": "1",
+      "weatherIcon": "yellow sun icon",
+      "windSpeed": "0 bft",
+      "windDirection": "North",
+      "windChill": 3,
+      "minTempInCelsius": "1",
+      "maxTempInCelsius": 25.9,
+      "minPressure": "1",
+      "maxPressure": 1011
     }
   ]
 }

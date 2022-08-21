@@ -63,7 +63,6 @@ const stationAnalytics = {
         latestWeatherCode > 900) {
           textCode = "Out of Scope, weathercode not recognised!";
       } 
-      
     }
 
     return textCode;
@@ -79,36 +78,34 @@ const stationAnalytics = {
         weatherCode = Number(station.readings[i].code);
       }
   
-      switch (weatherCode) {
-        case 100:
+      if (weatherCode > 0 && weatherCode <= 199) {
           icon = "yellow sun icon";
-          break;
-        case 200:
+      } else if (
+         weatherCode > 199 && weatherCode <= 299) {
           icon = "yellow cloud sun icon";
-          break;
-        case 300:
+      } else if (
+         weatherCode > 299 && weatherCode <= 399) {
           icon = "grey cloud icon";
-          break;
-        case 400:
+      } else if (
+         weatherCode > 399 && weatherCode <= 499) {
           icon = "blue cloud sun rain icon";
-          break;
-        case 500:
+      } else if (
+         weatherCode > 499 && weatherCode <= 599) {
           icon = "blue cloud rain icon";
-          break;
-        case 600:
+      } else if (
+         weatherCode > 599 && weatherCode <= 699) {
           icon = "blue cloud showers heavy icon";
-          break;
-        case 700:
+      } else if (
+         weatherCode > 699 && weatherCode <= 799) {
           icon = "blue snowflake icon";
-          break;
-        case 800:
+      } else if (
+         weatherCode > 799 && weatherCode <= 899) {
           icon = "blue bolt icon";
-          break;
-        default:
+      } else if (
+         weatherCode > 900) {
           icon = "red question circle icon";
       }
     }
-
     return icon;
   },
   
