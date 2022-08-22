@@ -180,17 +180,75 @@
             "28/7/2022",
             "29/7/2022"
           ]
+        },
+        {
+          "id": "65907be0-224c-11ed-8ec1-4b8d72fda734",
+          "code": 800,
+          "temp": 18.56,
+          "windSpeed": 4.92,
+          "pressure": 1009,
+          "windDirection": 225,
+          "timestamp": "Mon Aug 22 2022 18:58:23 GMT+0000 (Coordinated Universal Time)",
+          "tempTrend": [
+            22.22,
+            19.58,
+            19.24,
+            19.16,
+            19.79,
+            19.34,
+            22.42,
+            22.69
+          ],
+          "trendLabels": [
+            "22/7/2022",
+            "23/7/2022",
+            "24/7/2022",
+            "25/7/2022",
+            "26/7/2022",
+            "27/7/2022",
+            "28/7/2022",
+            "29/7/2022"
+          ]
+        },
+        {
+          "id": "930460f0-224c-11ed-8ec1-4b8d72fda734",
+          "code": 800,
+          "temp": 18.56,
+          "windSpeed": 4.92,
+          "pressure": 1009,
+          "windDirection": 225,
+          "timestamp": "Mon Aug 22 2022 18:59:39 GMT+0000 (Coordinated Universal Time)",
+          "tempTrend": [
+            22.22,
+            19.58,
+            19.24,
+            19.16,
+            19.79,
+            19.34,
+            22.42,
+            22.69
+          ],
+          "trendLabels": [
+            "22/7/2022",
+            "23/7/2022",
+            "24/7/2022",
+            "25/7/2022",
+            "26/7/2022",
+            "27/7/2022",
+            "28/7/2022",
+            "29/7/2022"
+          ]
         }
       ],
       "weather": "Thunder",
-      "tempInCelsius": 19.65,
-      "tempInFahrenheit": 19.65,
+      "tempInCelsius": 18.56,
+      "tempInFahrenheit": 65.408,
       "pressure": 1009,
       "weatherIcon": "blue bolt icon",
       "windSpeed": "1 bft",
       "windDirection": "South West",
-      "windChill": 0,
-      "minTempInCelsius": 19.65,
+      "windChill": 19,
+      "minTempInCelsius": 18.56,
       "maxTempInCelsius": 19.65,
       "minPressure": 1009,
       "maxPressure": 1009
