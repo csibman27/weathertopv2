@@ -77,14 +77,14 @@ const station = {
       const stationId = request.params.id;
       const station = stationStore.getStation(stationId);
       const lat = station.latitude;
-      const lng = station.longitude;
-      const requestUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lng}&units=metric&appid=6636e8a011274b26236f823786718c14`;
+      const lon = station.longitude;
+      const requestUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&appid=6636e8a011274b26236f823786718c14`;
       const result = await axios.get(requestUrl);
       if (result.status == 200) {
         const reading = result.data.current;
         report.id = uuid.v1();
         report.code = reading.weather[0].id;
-        report.temp = reading.temp;
+        report.temp = reading.temp_dmin;
         report.windSpeed = reading.wind_speed;
         report.pressure = reading.pressure;
         report.windDirection = reading.wind_deg;

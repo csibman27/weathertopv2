@@ -104,14 +104,14 @@
         }
       ],
       "weather": "Heavy Showers",
-      "tempInCelsius": 25.77,
-      "tempInFahrenheit": 78.386,
+      "tempInCelsius": 25.45,
+      "tempInFahrenheit": 77.81,
       "pressure": 1011,
       "weatherIcon": "blue cloud rain icon",
       "windSpeed": "1 bft",
       "windDirection": "East",
       "windChill": 28,
-      "minTempInCelsius": 25.58,
+      "minTempInCelsius": 25.45,
       "maxTempInCelsius": 25.77,
       "minPressure": 1011,
       "maxPressure": 1011
@@ -150,6 +150,92 @@
             "26/7/2022",
             "27/7/2022",
             "28/7/2022"
+          ]
+        },
+        {
+          "id": "735ba2b0-2240-11ed-afbd-830f55c678ba",
+          "code": 804,
+          "temp": 24.76,
+          "windSpeed": 4.34,
+          "pressure": 1013,
+          "windDirection": 23,
+          "timestamp": "Mon Aug 22 2022 17:32:52 GMT+0000 (Coordinated Universal Time)",
+          "tempTrend": [
+            24.96,
+            29.3,
+            31.25,
+            31.56,
+            30.15,
+            22.36,
+            25.03,
+            26.84
+          ],
+          "trendLabels": [
+            "22/7/2022",
+            "23/7/2022",
+            "24/7/2022",
+            "25/7/2022",
+            "26/7/2022",
+            "27/7/2022",
+            "28/7/2022",
+            "29/7/2022"
+          ]
+        },
+        {
+          "id": "016f3f80-2241-11ed-b535-7fccb68c8967",
+          "code": 804,
+          "temp": 24.76,
+          "windSpeed": 4.34,
+          "pressure": 1013,
+          "windDirection": 23,
+          "timestamp": "Mon Aug 22 2022 17:36:51 GMT+0000 (Coordinated Universal Time)",
+          "tempTrend": [
+            24.96,
+            29.3,
+            31.25,
+            31.56,
+            30.15,
+            22.36,
+            25.03,
+            26.84
+          ],
+          "trendLabels": [
+            "22/7/2022",
+            "23/7/2022",
+            "24/7/2022",
+            "25/7/2022",
+            "26/7/2022",
+            "27/7/2022",
+            "28/7/2022",
+            "29/7/2022"
+          ]
+        },
+        {
+          "id": "2af03f80-2241-11ed-a398-59495f38268d",
+          "code": 804,
+          "windSpeed": 4.34,
+          "pressure": 1013,
+          "windDirection": 23,
+          "timestamp": "Mon Aug 22 2022 17:38:00 GMT+0000 (Coordinated Universal Time)",
+          "tempTrend": [
+            24.96,
+            29.3,
+            31.25,
+            31.56,
+            30.15,
+            22.36,
+            25.03,
+            26.84
+          ],
+          "trendLabels": [
+            "22/7/2022",
+            "23/7/2022",
+            "24/7/2022",
+            "25/7/2022",
+            "26/7/2022",
+            "27/7/2022",
+            "28/7/2022",
+            "29/7/2022"
           ]
         }
       ],
