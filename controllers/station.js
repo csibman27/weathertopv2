@@ -107,7 +107,7 @@ const station = {
         reading: report
     };
     response.render("station", viewData);
-    stationStore.addAutoReading(stationId, report);
+    //stationStore.addAutoReading(stationId, report);
     //response.redirect("/station/" + stationId);
     console.log(report);
 
