@@ -152,7 +152,19 @@
             "29/7/2022"
           ]
         }
-      ]
+      ],
+      "weather": "Thunder",
+      "tempInCelsius": 19.65,
+      "tempInFahrenheit": 19.65,
+      "pressure": 1009,
+      "weatherIcon": "blue bolt icon",
+      "windSpeed": "1 bft",
+      "windDirection": "South West",
+      "windChill": 0,
+      "minTempInCelsius": 19.65,
+      "maxTempInCelsius": 19.65,
+      "minPressure": 1009,
+      "maxPressure": 1009
     }
   ]
 }
