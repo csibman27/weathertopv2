@@ -153,13 +153,13 @@
           ]
         },
         {
-          "id": "149445b0-2246-11ed-9f2e-7b8a014253bb",
+          "id": "a28f8da0-2248-11ed-befb-3bc8b5f2b3e1",
           "code": 804,
-          "temp": 19.29,
+          "temp": 18.85,
           "windSpeed": 4.02,
           "pressure": 1009,
           "windDirection": 225,
-          "timestamp": "Mon Aug 22 2022 18:13:10 GMT+0000 (Coordinated Universal Time)",
+          "timestamp": "Mon Aug 22 2022 18:31:27 GMT+0000 (Coordinated Universal Time)",
           "tempTrend": [
             22.16,
             20.25,
@@ -169,6 +169,64 @@
             20.25,
             22.65,
             22.61
+          ],
+          "trendLabels": [
+            "22/7/2022",
+            "23/7/2022",
+            "24/7/2022",
+            "25/7/2022",
+            "26/7/2022",
+            "27/7/2022",
+            "28/7/2022",
+            "29/7/2022"
+          ]
+        },
+        {
+          "id": "f7385fd0-2248-11ed-8e21-5fc3682988f8",
+          "code": 804,
+          "temp": 18.85,
+          "windSpeed": 4.02,
+          "pressure": 1009,
+          "windDirection": 225,
+          "timestamp": "Mon Aug 22 2022 18:33:49 GMT+0000 (Coordinated Universal Time)",
+          "tempTrend": [
+            22.16,
+            20.25,
+            19.88,
+            19.22,
+            20.01,
+            20.25,
+            22.65,
+            22.61
+          ],
+          "trendLabels": [
+            "22/7/2022",
+            "23/7/2022",
+            "24/7/2022",
+            "25/7/2022",
+            "26/7/2022",
+            "27/7/2022",
+            "28/7/2022",
+            "29/7/2022"
+          ]
+        },
+        {
+          "id": "023be4b0-2249-11ed-8e21-5fc3682988f8",
+          "code": 804,
+          "temp": 18.85,
+          "windSpeed": 4.02,
+          "pressure": 1009,
+          "windDirection": 225,
+          "timestamp": "Mon Aug 22 2022 18:34:08 GMT+0000 (Coordinated Universal Time)",
+          "tempTrend": [
+            22.22,
+            19.58,
+            19.24,
+            19.16,
+            19.79,
+            19.34,
+            22.42,
+            22.69
           ],
           "trendLabels": [
             "22/7/2022",

@@ -38,14 +38,10 @@
   const data = {
     labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
     datasets: [
-      { values: [18, 40, 30, 35, 8, 52, 17, -4] }
-    ]
-  };,
-    datasets: [
       {
         name: "Temperature", type: "line",
         values: [
-          {{#each reading.temp}}
+          {{#each reading.code }}
             {{this}},
           {{/each}}
         ]
