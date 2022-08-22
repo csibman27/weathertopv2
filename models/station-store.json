@@ -117,115 +117,29 @@
       "maxPressure": 1011
     },
     {
-      "id": "b43ea340-2169-11ed-9477-8dc04d5a2e57",
+      "id": "ce9e4190-2241-11ed-9f2e-7b8a014253bb",
       "userid": "bad1d2d0-163e-11ed-8b94-99f4f5285bf9",
       "stationName": "Waterford",
-      "latitude": "52.2593",
-      "longitude": "7.1101",
+      "latitude": "52.284962354465755",
+      "longitude": "-7.141113281250001",
       "readings": [
         {
-          "id": "b6c3c780-2169-11ed-9477-8dc04d5a2e57",
-          "code": 804,
-          "temp": 25.22,
-          "windSpeed": 5.76,
-          "pressure": 1015,
-          "windDirection": 323,
-          "timestamp": "Sun Aug 21 2022 15:55:43 GMT+0000 (Coordinated Universal Time)",
+          "id": "d360f9c0-2241-11ed-9f2e-7b8a014253bb",
+          "code": 802,
+          "temp": 19.65,
+          "windSpeed": 4.47,
+          "pressure": 1009,
+          "windDirection": 225,
+          "timestamp": "Mon Aug 22 2022 17:42:43 GMT+0000 (Coordinated Universal Time)",
           "tempTrend": [
-            24.43,
-            25.26,
-            29.05,
-            31.85,
-            30.68,
-            33.45,
-            30.51,
-            27.14
-          ],
-          "trendLabels": [
-            "21/7/2022",
-            "22/7/2022",
-            "23/7/2022",
-            "24/7/2022",
-            "25/7/2022",
-            "26/7/2022",
-            "27/7/2022",
-            "28/7/2022"
-          ]
-        },
-        {
-          "id": "735ba2b0-2240-11ed-afbd-830f55c678ba",
-          "code": 804,
-          "temp": 24.76,
-          "windSpeed": 4.34,
-          "pressure": 1013,
-          "windDirection": 23,
-          "timestamp": "Mon Aug 22 2022 17:32:52 GMT+0000 (Coordinated Universal Time)",
-          "tempTrend": [
-            24.96,
-            29.3,
-            31.25,
-            31.56,
-            30.15,
-            22.36,
-            25.03,
-            26.84
-          ],
-          "trendLabels": [
-            "22/7/2022",
-            "23/7/2022",
-            "24/7/2022",
-            "25/7/2022",
-            "26/7/2022",
-            "27/7/2022",
-            "28/7/2022",
-            "29/7/2022"
-          ]
-        },
-        {
-          "id": "016f3f80-2241-11ed-b535-7fccb68c8967",
-          "code": 804,
-          "temp": 24.76,
-          "windSpeed": 4.34,
-          "pressure": 1013,
-          "windDirection": 23,
-          "timestamp": "Mon Aug 22 2022 17:36:51 GMT+0000 (Coordinated Universal Time)",
-          "tempTrend": [
-            24.96,
-            29.3,
-            31.25,
-            31.56,
-            30.15,
-            22.36,
-            25.03,
-            26.84
-          ],
-          "trendLabels": [
-            "22/7/2022",
-            "23/7/2022",
-            "24/7/2022",
-            "25/7/2022",
-            "26/7/2022",
-            "27/7/2022",
-            "28/7/2022",
-            "29/7/2022"
-          ]
-        },
-        {
-          "id": "2af03f80-2241-11ed-a398-59495f38268d",
-          "code": 804,
-          "windSpeed": 4.34,
-          "pressure": 1013,
-          "windDirection": 23,
-          "timestamp": "Mon Aug 22 2022 17:38:00 GMT+0000 (Coordinated Universal Time)",
-          "tempTrend": [
-            24.96,
-            29.3,
-            31.25,
-            31.56,
-            30.15,
-            22.36,
-            25.03,
-            26.84
+            22.16,
+            20.25,
+            19.88,
+            19.22,
+            20.01,
+            20.25,
+            22.65,
+            22.61
           ],
           "trendLabels": [
             "22/7/2022",
@@ -238,19 +152,7 @@
             "29/7/2022"
           ]
         }
-      ],
-      "weather": "Thunder",
-      "tempInCelsius": 25.22,
-      "tempInFahrenheit": 25.22,
-      "pressure": 1015,
-      "weatherIcon": "blue bolt icon",
-      "windSpeed": "Enter a number between 1 - 117 for valid code",
-      "windDirection": "North West",
-      "windChill": 0,
-      "minTempInCelsius": 25.22,
-      "maxTempInCelsius": 25.22,
-      "minPressure": 1015,
-      "maxPressure": 1015
+      ]
     }
   ]
 }
