@@ -36,16 +36,16 @@
 
 <script>
   const data = {
-    labels: [
-      {{#each station.reading}}
-        "{{this}}",
-      {{/each}}
-    ],
+    labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    datasets: [
+      { values: [18, 40, 30, 35, 8, 52, 17, -4] }
+    ]
+  };,
     datasets: [
       {
         name: "Temperature", type: "line",
         values: [
-          {{#each reading.tempTrend}}
+          {{#each reading.temp}}
             {{this}},
           {{/each}}
         ]
