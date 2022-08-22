@@ -90,6 +90,7 @@ const station = {
         report.pressure = reading.pressure;
         report.windDirection = reading.wind_deg;
         report.timestamp = Date();
+        
         report.tempTrend = [];
         report.trendLabels = [];
         const trends = result.data.daily;
@@ -100,7 +101,7 @@ const station = {
           report.trendLabels.push(`${date.getDate()}/${date.getMonth()}/${date.getFullYear()}` );
         }
       }
-  
+      console.log(report);
       const viewData = {
         title: "Weather Report",
         reading: report

@@ -36,18 +36,23 @@
 
 <script>
   const data = {
-    labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    labels: [
+      {{#each reading.trendLabels}}
+        "{{this}}",
+      {{/each}}
+    ],
     datasets: [
       {
         name: "Temperature", type: "line",
         values: [
-          {{#each reading.code }}
+          {{#each reading.tempTrend}}
             {{this}},
           {{/each}}
         ]
       }
     ]
   }
+  
   const chart = new frappe.Chart("#chart", {
     title: "Temperature Trend",
     data: data,
