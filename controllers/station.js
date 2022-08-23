@@ -90,7 +90,6 @@ const station = {
         report.pressure = reading.pressure;
         report.windDirection = reading.wind_deg;
         report.timestamp = Date();
-        
         report.tempTrend = [];
         report.trendLabels = [];
         const trends = result.data.daily;
@@ -107,8 +106,8 @@ const station = {
         reading: report
     };
     response.render("station", viewData);
-    //stationStore.addAutoReading(stationId, report);
-    //response.redirect("/station/" + stationId);
+    stationStore.addAutoReading(stationId, report);
+    response.redirect("/station/" + stationId);
     console.log(report);
 
   }
