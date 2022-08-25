@@ -55,7 +55,7 @@ const accounts = {
     return userstore.getUserByEmail(userEmail);
   },
   
-   editview(request, response) {
+   editView(request, response) {
     const viewData = {
       title: "Edit your account"
     };

@@ -30,6 +30,10 @@ router.get('/station/:id/deletereading/:readingid', station.deleteReading);
 //router.get('/reading/:id/editreading/:readingid', reading.index);
 //router.post('/reading/:id/updatereading/:readingid', reading.update);
 
+//edit user
+router.get('/updateuser', accounts.editView);
+router.post('/updateUser', accounts.updateUser);
+
 //autoreading
 router.post("/station/:id/autoreading", station.autoReading);
 
