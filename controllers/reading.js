@@ -2,6 +2,7 @@
 
 const logger = require("../utils/logger");
 const stationStore = require("../models/station-store");
+const uuid = require("uuid");
 
 const reading = {
   index(request, response) {

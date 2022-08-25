@@ -72,7 +72,7 @@ const accounts = {
       password: request.body.password
     };
     userstore.updateUser(user, updatedUser);
-    response.redirect("/login");
+    response.redirect("/");
   }
   
 };
