@@ -21,8 +21,11 @@ const reading = {
     const readingId = request.params.readingid;
     const reading = stationStore.getReading(stationId, readingId)
     const newReading = {
-      station: request.body.setStation(stationId),
-      reading: request.body.setReading(stationId, readingId)
+      code: request.body.code,
+      temp: request.body.temp,
+      windSpeed: request.body.windSpeed,
+      windDirection: request.body.windDirection,
+      pressure: request.body.pressure
     };
     logger.debug(`Updating Reading ${readingId} from Station ${stationId}`);
     stationStore.updateReading(reading, newReading);
