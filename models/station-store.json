@@ -199,18 +199,18 @@
           ]
         }
       ],
-      "weather": "Heavy Showers",
-      "tempInCelsius": 25.45,
-      "tempInFahrenheit": 77.81,
-      "pressure": 1011,
-      "weatherIcon": "blue cloud rain icon",
+      "weather": "Thunder",
+      "tempInCelsius": 20.68,
+      "tempInFahrenheit": 69.224,
+      "pressure": 1012,
+      "weatherIcon": "blue bolt icon",
       "windSpeed": "1 bft",
-      "windDirection": "East",
-      "windChill": 28,
-      "minTempInCelsius": 25.45,
+      "windDirection": "North East",
+      "windChill": 23,
+      "minTempInCelsius": "11",
       "maxTempInCelsius": 25.77,
       "minPressure": 1011,
-      "maxPressure": 1011
+      "maxPressure": "1111"
     },
     {
       "id": "ce9e4190-2241-11ed-9f2e-7b8a014253bb",
@@ -284,6 +284,35 @@
             "27/7/2022",
             "28/7/2022",
             "29/7/2022"
+          ]
+        },
+        {
+          "id": "0b33c8a0-249a-11ed-8bc0-0365fa663891",
+          "code": 802,
+          "temp": 17.71,
+          "windSpeed": 6.69,
+          "pressure": 1018,
+          "windDirection": 240,
+          "timestamp": "Thu Aug 25 2022 17:19:14 GMT+0000 (Coordinated Universal Time)",
+          "tempTrend": [
+            18.97,
+            15.65,
+            19.9,
+            21.1,
+            20.86,
+            18.92,
+            20.73,
+            15.62
+          ],
+          "trendLabels": [
+            "25/7/2022",
+            "26/7/2022",
+            "27/7/2022",
+            "28/7/2022",
+            "29/7/2022",
+            "30/7/2022",
+            "31/7/2022",
+            "1/8/2022"
           ]
         }
       ],
