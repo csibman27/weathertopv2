@@ -8,19 +8,19 @@
     </div>
     <div class="field">
       <label>Temperature</label>
-      <input name="temp" placeholder "0.0" type="number" required>
+      <input name="temp" placeholder "0.0" type="number" value="{{reading.temp}}>
     </div>
      <div class="field">
       <label>Wind Speed</label>
-      <input placeholder="0.0" type="number" name="windSpeed" min="1" max="100" required>
+      <input placeholder="0.0" type="number" name="windSpeed" min="1" max="100" value="{{reading.windSpeed}}>
     </div>
      <div class="field">
       <label>Wind Direction</label>
-      <input placeholder="0.00" type="number" step="0.1" name="windDirection" required>
+      <input placeholder="0.00" type="number" step="0.1" name="windDirection" value="{{reading.windDirection}}>
     </div>
      <div class="field">
       <label>Pressure</label>
-      <input placeholder="0" type="number" name="pressure" required>
+      <input placeholder="0" type="number" name="pressure" value="{{reading.pressure}}>
     </div>
      </div>
   <button class="ui blue submit button">Update Report</button>
