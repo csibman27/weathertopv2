@@ -1,4 +1,14 @@
 {
 	"optOut": false,
+<<<<<<< HEAD
 	"lastUpdateCheck": 1661593145974
+=======
+	"lastUpdateCheck": 1661447919564,
+	"update": {
+		"latest": "7.9.5",
+		"current": "2.25.5",
+		"type": "major",
+		"name": "pnpm"
+	}
+>>>>>>> origin/master
 }
