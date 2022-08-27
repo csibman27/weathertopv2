@@ -1,5 +1,6 @@
 <nav class="ui menu"> <!-- calss="ui menu" -->
-  <header class="ui header item"> WeatherTop V2 | Welcome: {{ getCurrentUser }} </header>
+  {{#each user.firstName}}
+  <header class="ui header item"> WeatherTop V2 | Welcome: {{ firstName }} </header>
   <div class="right menu">
     <a id="dashboard" class="item" href="/dashboard"> Dashboard  </a>
     <a id="edituser" class="item" href="/updateuser/{{userId}}"> User Settings </a>
