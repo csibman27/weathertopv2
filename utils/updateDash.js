@@ -15,8 +15,9 @@ const updateDash = {
      station.minTempInCelsius = stationAnalytics.getMinTemp(station),
      station.maxTempInCelsius = stationAnalytics.getMaxTemp(station),
      station.minPressure = stationAnalytics.getMinPressure(station),
-     station.maxPressure = stationAnalytics.getMaxPressure(station)
-    
+     station.maxPressure = stationAnalytics.getMaxPressure(station),
+     station.minWind = stationAnalytics.getMinWind(station),
+     station.maxWind = stationAnalytics.getMaxWind(station)
   }
 };
 

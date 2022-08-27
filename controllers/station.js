@@ -37,9 +37,9 @@ const station = {
       minTempInCelsius: stationAnalytics.getMinTemp(station),
       maxTempInCelsius: stationAnalytics.getMaxTemp(station),
       minPressure: stationAnalytics.getMinPressure(station),
-      maxPressure: stationAnalytics.getMaxPressure(station)
-      
-      
+      maxPressure: stationAnalytics.getMaxPressure(station),
+      minWind: stationAnalytics.getMinWind(station),
+      maxWind: stationAnalytics.getMaxWind(station)
     };
     response.render("station", viewData);
   },
