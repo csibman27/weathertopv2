@@ -36,8 +36,8 @@ const station = {
       windChill: stationAnalytics.getWindChill(station),
       minTempInCelsius: stationAnalytics.getMinTemp(station),
       maxTempInCelsius: stationAnalytics.getMaxTemp(station),
-      minPressure: stationAnalytics.getMinPressure(station),
-      maxPressure: stationAnalytics.getMaxPressure(station),
+      minPress: stationAnalytics.getMinPressure(station),
+      maxPress: stationAnalytics.getMaxPressure(station),
       minWind: stationAnalytics.getMinWind(station),
       maxWind: stationAnalytics.getMaxWind(station)
     };
