@@ -9,210 +9,6 @@
       "readings": []
     },
     {
-      "id": "302e9690-2160-11ed-86f0-db4ab27f39a3",
-      "userid": "bad1d2d0-163e-11ed-8b94-99f4f5285bf9",
-      "stationName": "Sligo",
-      "latitude": "44",
-      "longitude": "7",
-      "readings": [
-        {
-          "id": "6ac3efc0-2166-11ed-b199-d1411d1d8a71",
-          "code": 500,
-          "temp": 25.58,
-          "windSpeed": 2.01,
-          "pressure": 1011,
-          "windDirection": 99,
-          "timestamp": "Sun Aug 21 2022 15:32:07 GMT+0000 (Coordinated Universal Time)",
-          "tempTrend": [
-            28.07,
-            26.86,
-            27.08,
-            25.67,
-            26.47,
-            28.74,
-            28.02,
-            27.77
-          ],
-          "trendLabels": [
-            "21/7/2022",
-            "22/7/2022",
-            "23/7/2022",
-            "24/7/2022",
-            "25/7/2022",
-            "26/7/2022",
-            "27/7/2022",
-            "28/7/2022"
-          ]
-        },
-        {
-          "id": "dd4f71c0-2168-11ed-af43-71ef53edff67",
-          "code": 500,
-          "temp": 25.77,
-          "windSpeed": 2.01,
-          "pressure": 1011,
-          "windDirection": 99,
-          "timestamp": "Sun Aug 21 2022 15:49:39 GMT+0000 (Coordinated Universal Time)",
-          "tempTrend": [
-            28.07,
-            26.86,
-            27.08,
-            25.67,
-            26.47,
-            28.74,
-            28.02,
-            27.77
-          ],
-          "trendLabels": [
-            "21/7/2022",
-            "22/7/2022",
-            "23/7/2022",
-            "24/7/2022",
-            "25/7/2022",
-            "26/7/2022",
-            "27/7/2022",
-            "28/7/2022"
-          ]
-        },
-        {
-          "id": "a94c2370-216b-11ed-9477-8dc04d5a2e57",
-          "code": 500,
-          "temp": 25.45,
-          "windSpeed": 2.01,
-          "pressure": 1011,
-          "windDirection": 99,
-          "timestamp": "Sun Aug 21 2022 16:09:40 GMT+0000 (Coordinated Universal Time)",
-          "tempTrend": [
-            28.07,
-            26.86,
-            27.08,
-            25.67,
-            26.47,
-            28.74,
-            28.02,
-            27.77
-          ],
-          "trendLabels": [
-            "21/7/2022",
-            "22/7/2022",
-            "23/7/2022",
-            "24/7/2022",
-            "25/7/2022",
-            "26/7/2022",
-            "27/7/2022",
-            "28/7/2022"
-          ]
-        },
-        {
-          "id": "26f88c90-224e-11ed-9e19-8b0c86434c99",
-          "code": 800,
-          "temp": 20.68,
-          "windSpeed": 1.38,
-          "pressure": 1012,
-          "windDirection": 35,
-          "timestamp": "Mon Aug 22 2022 19:10:57 GMT+0000 (Coordinated Universal Time)",
-          "tempTrend": [
-            26.21,
-            27.41,
-            27.08,
-            27.43,
-            27.78,
-            25.42,
-            26.78,
-            27.58
-          ],
-          "trendLabels": [
-            "22/7/2022",
-            "23/7/2022",
-            "24/7/2022",
-            "25/7/2022",
-            "26/7/2022",
-            "27/7/2022",
-            "28/7/2022",
-            "29/7/2022"
-          ]
-        },
-        {
-          "id": "6224dd50-224e-11ed-8ab7-c77ac5c7aa5f",
-          "code": 800,
-          "temp": 20.68,
-          "windSpeed": 1.38,
-          "pressure": 1012,
-          "windDirection": 35,
-          "timestamp": "Mon Aug 22 2022 19:12:36 GMT+0000 (Coordinated Universal Time)",
-          "tempTrend": [
-            26.21,
-            27.41,
-            27.08,
-            27.43,
-            27.78,
-            25.42,
-            26.78,
-            27.58
-          ],
-          "trendLabels": [
-            "22/7/2022",
-            "23/7/2022",
-            "24/7/2022",
-            "25/7/2022",
-            "26/7/2022",
-            "27/7/2022",
-            "28/7/2022",
-            "29/7/2022"
-          ]
-        },
-        {
-          "id": "6fae97e0-224e-11ed-8ab7-c77ac5c7aa5f",
-          "code": "100",
-          "temp": "11",
-          "windSpeed": "11",
-          "windDirection": "11",
-          "pressure": "1111",
-          "timestamp": "2022-8-22 T 20:12:35"
-        },
-        {
-          "id": "76d557c0-224e-11ed-8ab7-c77ac5c7aa5f",
-          "code": 800,
-          "temp": 20.68,
-          "windSpeed": 1.38,
-          "pressure": 1012,
-          "windDirection": 35,
-          "timestamp": "Mon Aug 22 2022 19:13:11 GMT+0000 (Coordinated Universal Time)",
-          "tempTrend": [
-            26.21,
-            27.41,
-            27.08,
-            27.43,
-            27.78,
-            25.42,
-            26.78,
-            27.58
-          ],
-          "trendLabels": [
-            "22/7/2022",
-            "23/7/2022",
-            "24/7/2022",
-            "25/7/2022",
-            "26/7/2022",
-            "27/7/2022",
-            "28/7/2022",
-            "29/7/2022"
-          ]
-        }
-      ],
-      "weather": "Thunder",
-      "tempInCelsius": 20.68,
-      "tempInFahrenheit": 69.224,
-      "pressure": 1012,
-      "weatherIcon": "blue bolt icon",
-      "windSpeed": "1 bft",
-      "windDirection": "North East",
-      "windChill": 23,
-      "minTempInCelsius": "11",
-      "maxTempInCelsius": 25.77,
-      "minPressure": 1011,
-      "maxPressure": "1111"
-    },
-    {
       "id": "ce9e4190-2241-11ed-9f2e-7b8a014253bb",
       "userid": "bad1d2d0-163e-11ed-8b94-99f4f5285bf9",
       "stationName": "Waterford",
@@ -317,17 +113,33 @@
         }
       ],
       "weather": "Thunder",
-      "tempInCelsius": 18.35,
-      "tempInFahrenheit": 65.03,
-      "pressure": 1009,
+      "tempInCelsius": 17.71,
+      "tempInFahrenheit": 63.878,
+      "pressure": 1018,
       "weatherIcon": "blue bolt icon",
-      "windSpeed": "1 bft",
+      "windSpeed": "2 bft",
       "windDirection": "West South West",
-      "windChill": 19,
+      "windChill": 18,
       "minTempInCelsius": "10",
       "maxTempInCelsius": 19.65,
       "minPressure": "110",
-      "maxPressure": 1009
+      "maxPressure": 1018
+    },
+    {
+      "id": "d71e8330-2600-11ed-bcd5-2364587baa1d",
+      "userid": "ceffcec0-2600-11ed-bcd5-2364587baa1d",
+      "stationName": "1",
+      "latitude": "1",
+      "longitude": "1",
+      "readings": []
+    },
+    {
+      "id": "64aac790-2601-11ed-bcd5-2364587baa1d",
+      "userid": "bad1d2d0-163e-11ed-8b94-99f4f5285bf9",
+      "stationName": "Sligo",
+      "latitude": "1",
+      "longitude": "2",
+      "readings": []
     }
   ]
 }

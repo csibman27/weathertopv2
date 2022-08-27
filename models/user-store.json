@@ -8,11 +8,18 @@
       "id": "3ad52697-6d98-4d80-8273-084de55a86c0"
     },
     {
-      "firstName": "T",
-      "lastName": "Molnar",
+      "firstName": "t",
+      "lastName": "molnar",
       "email": "csibman@hotmail.com",
-      "password": "1",
+      "password": "2",
       "id": "bad1d2d0-163e-11ed-8b94-99f4f5285bf9"
+    },
+    {
+      "firstName": "test",
+      "lastName": "user",
+      "email": "test@user.com",
+      "password": "1",
+      "id": "ceffcec0-2600-11ed-bcd5-2364587baa1d"
     }
   ]
 }
