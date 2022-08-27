@@ -27,8 +27,8 @@ router.post('/station/:id/addreading', station.addReading);
 router.get('/station/:id/deletereading/:readingid', station.deleteReading);
 
 //edit reading
-router.get('/updatereading', reading.editView);
-//router.post('/reading/:id/updatereading/:readingid', reading.update);
+//router.get('/updatereading', reading.editView);
+//router.post('/updatereading/:id/updatereading/:readingid', reading.update);
 
 //edit user
 router.get('/updateuser', accounts.editView);
