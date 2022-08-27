@@ -27,12 +27,12 @@ router.post('/station/:id/addreading', station.addReading);
 router.get('/station/:id/deletereading/:readingid', station.deleteReading);
 
 //edit reading
-//router.get('/reading', reading.index);
+router.get('/updatereading', reading.editView);
 //router.post('/reading/:id/updatereading/:readingid', reading.update);
 
 //edit user
 router.get('/updateuser', accounts.editView);
-router.post('/updateUser', accounts.updateUser);
+router.post('/updateuser', accounts.updateUser);
 
 //autoreading
 router.post("/station/:id/autoreading", station.autoReading);

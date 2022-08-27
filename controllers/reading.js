@@ -16,6 +16,13 @@ const reading = {
     };
     response.render("reading", viewData);
   },
+  
+  editView(request, response) {
+    const viewData = {
+      title: "Edit readings"
+    };
+    response.render("updatereading", viewData);
+  },
 
   update(request, response) {
     const stationId = request.params.id;

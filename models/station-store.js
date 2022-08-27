@@ -63,7 +63,7 @@ const stationStore = {
   },
 
   updateReading(reading, updatedReading) {
-    reading.code = updatedReading.code;
+    reading.code = updatedReading.code === "" ? reading.code : updateReading.code;
     reading.temp = updatedReading.temp;
     reading.windSpeed = updatedReading.windSpeed;
     reading.windDirection = updatedReading.windDirection;
