@@ -5,6 +5,7 @@ const stationStore = require("../models/station-store");
 const uuid = require("uuid");
 const currentDate = new Date();
 const stationAnalytics = require("../utils/station-analytics");
+const axios = require("axios");
 
 
 const currentDayOfMonth = currentDate.getDate();
@@ -32,9 +33,13 @@ const station = {
       weatherIcon: stationAnalytics.getWeatherIcon(station),
       windSpeed: stationAnalytics.getWindReading(station),
       windDirection: stationAnalytics.getWindDirection(station),
-      windChill: stationAnalytics.getWindChill(station)
-      
-      
+      windChill: stationAnalytics.getWindChill(station),
+      minTempInCelsius: stationAnalytics.getMinTemp(station),
+      maxTempInCelsius: stationAnalytics.getMaxTemp(station),
+      minPress: stationAnalytics.getMinPressure(station),
+      maxPress: stationAnalytics.getMaxPressure(station),
+      minWind: stationAnalytics.getMinWind(station),
+      maxWind: stationAnalytics.getMaxWind(station)
     };
     response.render("station", viewData);
   },
@@ -64,6 +69,47 @@ const station = {
     
     stationStore.addReading(stationId, newReading);
     response.redirect("/station/" + stationId);
+  },
+  
+  async autoReading(request, response) {
+    logger.info("rendering new report");
+    let report = {};
+      const stationId = request.params.id;
+      const station = stationStore.getStation(stationId);
+      const lat = station.latitude;
+      const lon = station.longitude;
+      const requestUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&appid=API_KEY`;
+      const result = await axios.get(requestUrl);
+      if (result.status == 200) {
+        console.log(result.data);
+        const reading = result.data.current;
+        report.id = uuid.v1();
+        report.code = reading.weather[0].id;
+        report.temp = reading.temp;
+        report.windSpeed = reading.wind_speed;
+        report.pressure = reading.pressure;
+        report.windDirection = reading.wind_deg;
+        report.timestamp = Date();
+        report.tempTrend = [];
+        report.trendLabels = [];
+        const trends = result.data.daily;
+        for (let i=0; i<trends.length; i++) {
+          report.tempTrend.push(trends[i].temp.day);
+          const date = new Date(trends[i].dt * 1000);
+          console.log(date);
+          report.trendLabels.push(`${date.getDate()}/${date.getMonth()}/${date.getFullYear()}` );
+        }
+      }
+      console.log(report);
+      const viewData = {
+        title: "Weather Report",
+        reading: report
+    };
+    response.render("station", viewData);
+    stationStore.addAutoReading(stationId, report);
+    response.redirect("/station/" + stationId);
+    console.log(report);
+
   }
 };
 
