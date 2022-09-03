@@ -36,10 +36,12 @@ const station = {
       windChill: stationAnalytics.getWindChill(station),
       minTempInCelsius: stationAnalytics.getMinTemp(station),
       maxTempInCelsius: stationAnalytics.getMaxTemp(station),
-      minPress: stationAnalytics.getMinPressure(station),
-      maxPress: stationAnalytics.getMaxPressure(station),
-      minWind: stationAnalytics.getMinWind(station),
-      maxWind: stationAnalytics.getMaxWind(station)
+      minPressure: stationAnalytics.getMinPressure(station),
+      maxPressure: stationAnalytics.getMaxPressure(station),
+      tempTrend: stationAnalytics.getTempTrend(station),
+      windTrend: stationAnalytics.getWindTrend(station),
+      pressureTrend: stationAnalytics.getPressureTrend(station)
+      
     };
     response.render("station", viewData);
   },
@@ -78,7 +80,7 @@ const station = {
       const station = stationStore.getStation(stationId);
       const lat = station.latitude;
       const lon = station.longitude;
-      const requestUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&appid=API_KEY`;
+      const requestUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&appid=6636e8a011274b26236f823786718c14`;
       const result = await axios.get(requestUrl);
       if (result.status == 200) {
         console.log(result.data);
